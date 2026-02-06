@@ -191,10 +191,19 @@ input[type="submit"] {
 .bookmark-btn {
     font-size: 0;
 }
+.breadcrumb {
+    position: relative;
+}
 
-.bookmark-btn::before {
+.breadcrumb::after {
     content: "Layout belongs to: PatheraGamer";
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
     font-size: 14px;
-    color: #000;
+    color: #d98c3a;
     font-weight: 600;
+    opacity: 0.85;
+    pointer-events: none;
 }
