@@ -302,3 +302,10 @@ input[type="submit"] {
 #main .panel::after {
     display: none !important;
 }
+/* Make the COMMENT container teal instead of black */
+.container:has(#comment),
+.container:has(textarea),
+.container:has(.comment) {
+    background-color: #1f3a40 !important;
+    background-image: none !important;
+}
