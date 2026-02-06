@@ -145,3 +145,46 @@ input[type="submit"] {
         url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png"),
         auto !important;
 }
+/* ======================================
+   FIX: UNIFY MAIN + SIDEBAR
+   (paste at bottom of file)
+====================================== */
+
+/* One single background wrapper */
+.container {
+    background: rgba(0, 0, 0, 0.55) !important;
+    border-radius: 18px !important;
+    padding: 22px !important;
+}
+
+/* Remove inner box backgrounds */
+.col-md-9,
+.col-md-3 {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 14px !important;
+}
+
+/* ======================================
+   FIX: TRANSPARENCY VISIBILITY
+====================================== */
+
+.panel,
+.table,
+.table-striped,
+.progress {
+    background: rgba(60, 70, 75, 0.35) !important;
+    border: none !important;
+    border-radius: 12px !important;
+}
+
+/* Sidebar panels slightly darker */
+.col-md-3 .panel {
+    background: rgba(55, 65, 70, 0.4) !important;
+}
+
+/* Spacing so content doesn't touch edges */
+.col-md-9 > *,
+.col-md-3 > * {
+    margin-bottom: 14px !important;
+}
