@@ -327,3 +327,24 @@ input[type="submit"] {
 #sidebar .box::after {
     display: none !important;
 }
+/* Restore main container */
+.col-md-8 .panel,
+.col-md-8 .box,
+.col-md-8 .well {
+    background: rgba(0, 0, 0, 0.55) !important;
+}
+/* Sidebar boxes only */
+.col-md-4 .panel,
+.col-md-4 .box,
+.col-md-4 .well {
+    background-color: #1f3a40 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.col-md-4 .panel::before,
+.col-md-4 .panel::after,
+.col-md-4 .box::before,
+.col-md-4 .box::after {
+    display: none !important;
+}
