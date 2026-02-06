@@ -181,3 +181,16 @@ a:hover {
     border: none !important;
     box-shadow: none !important;
 }
+/* ===============================
+   LIODEN DEBUG – FORCE VISUAL CHANGE
+   =============================== */
+
+/* Main content panels */
+#pageContainer .panel-body {
+    background: red !important;
+}
+
+/* Sidebar panels (date / stats boxes) */
+.sidebar .panel-body.small {
+    background: blue !important;
+}
