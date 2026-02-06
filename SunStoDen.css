@@ -227,3 +227,25 @@ input[type="submit"] {
 .comment hr {
     border-color: rgba(230, 242, 242, 0.15) !important;
 }
+/* FULL comment container background */
+#comment,
+#comment_container,
+#comment-wrapper,
+.comment-container,
+.comment-thread {
+    background: #1f3a40 !important;
+}
+
+/* Remove layered inner backgrounds */
+.comment,
+.comment-header,
+.comment-body,
+.comment-content {
+    background: transparent !important;
+}
+
+/* Keep rounded edges clean */
+#comment,
+.comment-container {
+    border-radius: 18px !important;
+}
