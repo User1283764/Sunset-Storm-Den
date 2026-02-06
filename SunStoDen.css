@@ -425,3 +425,24 @@ input[type="submit"] {
 #pageSidebar br {
     display: none !important;
 }
+/* Sidebar panel overlay */
+#pageSidebar .panel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Teal skin */
+#pageSidebar .panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #1f3f44;
+    opacity: 0.9;
+    z-index: 0;
+}
+
+/* Ensure text/icons stay on top */
+#pageSidebar .panel > * {
+    position: relative;
+    z-index: 1;
+}
