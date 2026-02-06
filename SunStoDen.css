@@ -309,3 +309,21 @@ input[type="submit"] {
     background-color: #1f3a40 !important;
     background-image: none !important;
 }
+/* Sidebar boxes – dark teal */
+#sidebar .panel,
+#sidebar .box,
+#sidebar .card,
+#sidebar .well {
+    background-color: #1f3a40 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Remove the light inner strip / white base */
+#sidebar .panel::before,
+#sidebar .panel::after,
+#sidebar .box::before,
+#sidebar .box::after {
+    display: none !important;
+}
