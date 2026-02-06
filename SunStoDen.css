@@ -249,3 +249,24 @@ input[type="submit"] {
 .comment-container {
     border-radius: 18px !important;
 }
+/* DEN COMMENT SECTION – FORCE FULL BACKGROUND */
+#den-comments,
+#den-comments > div,
+#den-comments .panel,
+#den-comments .panel-body {
+    background-color: #1f3a40 !important;
+    background-image: none !important;
+}
+
+/* Kill inner strips / pills */
+#den-comments .comment,
+#den-comments .comment-header,
+#den-comments .comment-body,
+#den-comments .comment-content {
+    background: transparent !important;
+}
+
+/* Keep text readable */
+#den-comments * {
+    color: #e6f2f2 !important;
+}
