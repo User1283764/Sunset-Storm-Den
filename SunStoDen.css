@@ -1,9 +1,9 @@
 /* =========================
    SUNSET STORM DEN
-   Clean rebuild
+   Full rebuild
    ========================= */
 
-/* BACKGROUND */
+/* ---------- BACKGROUND ---------- */
 body {
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif");
     background-size: cover;
@@ -11,37 +11,66 @@ body {
     background-attachment: fixed;
 }
 
-/* MAIN DEN TABLE */
-#den .container {
-    background: rgba(0, 0, 0, 0.55);
-    border-radius: 20px;
-    padding: 20px;
+/* ---------- CUSTOM CURSOR ---------- */
+body, a, button {
+    cursor: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png"), auto;
 }
 
-/* REMOVE DEFAULT PANEL STYLES */
+/* ---------- MAIN DEN PANEL ---------- */
+#den .container {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 22px;
+    padding: 22px;
+}
+
+/* Prevent Bootstrap grey */
+#den .container *,
+#den .table {
+    background-color: transparent;
+}
+
+/* ---------- TOP MENU BAR ---------- */
+#header .navbar,
+#header .navbar-default {
+    background: rgba(0, 0, 0, 0.65) !important;
+    border-radius: 18px;
+    border: none;
+}
+
+/* ---------- REMOVE DEFAULT PANEL STYLES ---------- */
 .panel,
 .panel-default {
-    background: transparent;
-    border: none;
-    box-shadow: none;
+    border: none !important;
+    box-shadow: none !important;
 }
 
-/* SIDEBAR BOXES */
+/* ---------- SIDEBAR BOXES ---------- */
 #pageSidebar .panel {
-    background-color: #1f3a40; /* your darkest teal */
+    background-color: #1f3a40 !important; /* your darkest teal */
     border-radius: 18px;
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+    overflow: hidden;
 }
 
-/* SIDEBAR CONTENT */
+/* Kill inner white */
 #pageSidebar .panel-body {
-    background: transparent;
+    background-color: transparent !important;
 }
 
-/* SIDEBAR TEXT */
+/* ---------- SIDEBAR TEXT ---------- */
 #pageSidebar,
 #pageSidebar a,
 #pageSidebar span,
 #pageSidebar p {
-    color: #e6f2f2;
+    color: #e8f3f3;
+}
+
+/* ---------- LINKS ---------- */
+a {
+    color: #f2a65a; /* orange accent */
+}
+
+a:hover {
+    color: #ffd19a;
+    text-decoration: none;
 }
