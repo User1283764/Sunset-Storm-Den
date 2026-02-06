@@ -107,3 +107,39 @@ a:hover {
     border-radius: 18px !important;
     background: rgba(0, 0, 0, 0.65) !important;
 }
+/* ===============================
+   LIODEN HARD OVERRIDES
+   =============================== */
+
+/* MAIN CONTENT PANELS (LEFT SIDE) */
+.panel-body {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Sidebar panels ONLY */
+.sidebar .panel-body,
+#pageSidebar .panel-body,
+#pageSidebar .panel-body.small {
+    background-color: #1f3a40 !important;
+}
+
+/* Kill panel shells */
+.panel,
+.panel-default {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Tables & alerts inside den */
+.table,
+.table-responsive,
+.alert {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Navbar */
+.navbar,
+.navbar-default {
+    background: rgba(0, 0, 0, 0.65) !important;
+    border-radius: 18px !important;
+}
