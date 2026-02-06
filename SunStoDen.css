@@ -285,3 +285,20 @@ input[type="submit"] {
 #den-comments .alert {
     background-color: rgba(31, 58, 64, 0.65) !important;
 }
+/* Main den content panel (includes comments) */
+#main .panel,
+#main .panel-default {
+    background-color: #1f3a40 !important;
+    background-image: none !important;
+}
+
+/* Inner panel body */
+#main .panel-body {
+    background: transparent !important;
+}
+
+/* Remove dark overlay gradients */
+#main .panel::before,
+#main .panel::after {
+    display: none !important;
+}
