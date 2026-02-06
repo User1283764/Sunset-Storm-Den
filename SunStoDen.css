@@ -381,3 +381,6 @@ input[type="submit"] {
 #pageSidebar .panel {
     border-radius: 18px;
 }
+#pageSidebar {
+    outline: 5px solid red !important;
+}
