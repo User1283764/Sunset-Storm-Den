@@ -188,12 +188,13 @@ input[type="submit"] {
 .col-md-3 > * {
     margin-bottom: 14px !important;
 }
-.bookmark-btn::after {
+.bookmark-btn {
+    font-size: 0;
+}
+
+.bookmark-btn::before {
     content: "Layout belongs to: PatheraGamer";
-    margin-left: 14px;
     font-size: 14px;
-    color: #d98c3a;
+    color: #000;
     font-weight: 600;
-    vertical-align: middle;
-    opacity: 0.85;
 }
