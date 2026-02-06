@@ -402,3 +402,26 @@ input[type="submit"] {
 #pageSidebar .visible-sm {
     display: none !important;
 }
+/* FORCE SIDEBAR PANELS TO TEAL */
+#pageSidebar > .panel,
+#pageSidebar > .panel-default,
+#pageSidebar > div > .panel,
+#pageSidebar > div > .panel-default {
+    background-color: #1f3f44 !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+/* FORCE PANEL CONTENT */
+#pageSidebar .panel-body,
+#pageSidebar .panel-body.small {
+    background-color: #1f3f44 !important;
+    background-image: none !important;
+    border: none !important;
+}
+
+/* REMOVE WHITE BASE / SPACER */
+#pageSidebar .clear,
+#pageSidebar br {
+    display: none !important;
+}
