@@ -207,3 +207,23 @@ input[type="submit"] {
     opacity: 0.85;
     pointer-events: none;
 }
+/* Comment box background */
+#comment,
+.comment,
+#comment-box,
+.comment-box,
+#comment-container {
+    background-color: #1f3a40 !important;
+    border-radius: 14px;
+}
+
+/* Comment text */
+#comment *,
+.comment * {
+    color: #e6f2f2 !important;
+}
+
+/* Comment header divider (optional polish) */
+.comment hr {
+    border-color: rgba(230, 242, 242, 0.15) !important;
+}
