@@ -348,3 +348,18 @@ input[type="submit"] {
 .col-md-4 .box::after {
     display: none !important;
 }
+/* Sidebar boxes ONLY (Den page) */
+#den .col-lg-4 .panel,
+#den .col-lg-4 .box,
+#den .col-lg-4 .well {
+    background-color: #1f3a40 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+#den .col-lg-4 .panel::before,
+#den .col-lg-4 .panel::after,
+#den .col-lg-4 .box::before,
+#den .col-lg-4 .box::after {
+    display: none !important;
+}
