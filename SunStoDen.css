@@ -363,3 +363,21 @@ input[type="submit"] {
 #den .col-lg-4 .box::after {
     display: none !important;
 }
+/* SIDEBAR BOX BACKGROUNDS */
+#pageSidebar .panel,
+#pageSidebar .panel-default {
+    background: rgba(38, 92, 96, 0.85) !important; /* teal */
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* INNER CONTENT (kills the white layer) */
+#pageSidebar .panel-body {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Optional: soften rounded corners */
+#pageSidebar .panel {
+    border-radius: 18px;
+}
