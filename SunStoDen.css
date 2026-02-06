@@ -384,3 +384,21 @@ input[type="submit"] {
 #pageSidebar {
     outline: 5px solid red !important;
 }
+/* SIDEBAR BOXES – teal */
+#pageSidebar .panel,
+#pageSidebar .panel-default {
+    background-color: #1f3f44 !important;
+    border: none !important;
+}
+
+/* Inner content */
+#pageSidebar .panel-body {
+    background-color: transparent !important;
+}
+
+/* Remove white divider underneath */
+#pageSidebar .clear,
+#pageSidebar .visible-xs,
+#pageSidebar .visible-sm {
+    display: none !important;
+}
