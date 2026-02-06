@@ -425,6 +425,12 @@ input[type="submit"] {
 #pageSidebar br {
     display: none !important;
 }
+/* MAIN BACKGROUND TABLE – storm black */
+.container,
+#den,
+#den .container {
+    background: rgba(0, 0, 0, 0.55) !important;
+}
 /* Sidebar panel overlay */
 #pageSidebar .panel {
     position: relative;
@@ -442,6 +448,27 @@ input[type="submit"] {
 }
 
 /* Ensure text/icons stay on top */
+#pageSidebar .panel > * {
+    position: relative;
+    z-index: 1;
+}
+/* SIDEBAR BOX TEAL OVERLAY – final */
+#pageSidebar .panel {
+    position: relative;
+    overflow: hidden;
+}
+
+/* teal skin */
+#pageSidebar .panel::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: #1f3a40; /* YOUR teal */
+    opacity: 1;
+    z-index: 0;
+}
+
+/* keep content visible */
 #pageSidebar .panel > * {
     position: relative;
     z-index: 1;
