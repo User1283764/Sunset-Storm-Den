@@ -74,3 +74,36 @@ a:hover {
     color: #ffd19a;
     text-decoration: none;
 }
+/* ===============================
+   LIODEN STRUCTURE FIXES
+   =============================== */
+
+/* ---- MAIN DEN CONTENT (LEFT) ---- */
+#pageContainer .panel-body,
+#pageContainer .table,
+#pageContainer .alert {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Remove inner white/grey borders */
+#pageContainer .panel {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* ---- SIDEBAR ONLY (RIGHT) ---- */
+#pageSidebar .panel-body.small {
+    background-color: #1f3a40 !important; /* darkest teal swatch */
+}
+
+#pageSidebar .panel {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* ---- NAVBAR ROUNDING ---- */
+.navbar,
+.navbar-default {
+    border-radius: 18px !important;
+    background: rgba(0, 0, 0, 0.65) !important;
+}
