@@ -942,7 +942,7 @@ center > b > span {
 body::before {
     content: "";
     position: fixed;
-    top: 6px;              /* aligns with menu bar */
+    top: -40px;              /* aligns with menu bar */
     left: 12px;
     width: 150px;
     height: 150px;
