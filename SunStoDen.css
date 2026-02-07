@@ -928,81 +928,22 @@ center > b > span {
     color: #05181E !important;
     border-color: #EFA872;
 }
-/* === NAVBAR ART ANCHOR FIX === */
-
+/* === NAVBAR FLOWER OVERLAY (SAFE, ANCHORED, UNCLIPPED) === */
 .navbar {
-    position: relative !important;
-    padding-left: 220px;
-    min-height: 70px;
+    position: relative;
     overflow: visible !important;
 }
 
-}
-
-/* Decorative image replacing Lioden button area */
+/* Decorative flower */
 .navbar::before {
     content: "";
     position: absolute;
-    top: 50%;
     left: 20px;
-    transform: translateY(-50%);
-    width: 220px;
-    height: 140px;
-
-    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left center;
-
-    z-index: 10;
+    top: -40px; /* pushes it above the bar */
+    width: 180px;
+    height: 180px;
+    background: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png")
+        no-repeat center / contain;
     pointer-events: none;
-}
-/* === SAFARI-SAFE NAV ART === */
-
-/* Push menu text right */
-.navbar {
-    padding-left: 220px !important;
-}
-
-/* Floating decorative art */
-#nav-art {
-    position: fixed;
-    top: 28px;        /* aligns with navbar */
-    left: 20px;
-
-    width: 220px;
-    height: 160px;
-
-    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    z-index: 9999;
-    pointer-events: none;
-}
-/* === HEADER ART (SAFE, NO BREAKAGE) === */
-#header {
-    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
-    background-repeat: no-repeat;
-    background-position: left 20px center;
-    background-size: 180px auto;
-}
-/* === HEADER ART (TOP LEFT, SAFARI SAFE) === */
-.topbar {
-    position: relative;
-}
-/* === NAVBAR DECORATIVE ART (STABLE METHOD) === */
-.navbar {
-    background-image:
-        url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png"),
-        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
-    background-repeat: no-repeat;
-    background-position: left 20px center;
-    background-size: 160px auto;
-}
-/* === NAVBAR ART OVERRIDE (SAFARI + LIODEN SAFE) === */
-.navbar {
-    background:
-        url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png") left 20px center / 160px auto no-repeat,
-        rgba(1, 1, 1, 0.5) !important;
+    z-index: 5;
 }
