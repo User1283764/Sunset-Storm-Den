@@ -987,3 +987,21 @@ center > b > span {
     background-position: left 20px center;
     background-size: 180px auto;
 }
+/* === HEADER ART (TOP LEFT, SAFARI SAFE) === */
+.topbar {
+    position: relative;
+}
+
+.topbar::before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    bottom: -20px;
+    width: 180px;
+    height: 180px;
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none;
+    z-index: 5;
+}
