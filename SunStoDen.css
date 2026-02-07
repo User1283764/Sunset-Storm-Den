@@ -861,3 +861,13 @@ body::after {
 	z-index: 9999;
 	pointer-events: none;
 }
+/* PROGRESS BAR FILL COLOR */
+
+.progress-bar,
+.progress-bar-success,
+.progress-bar-warning,
+.progress-bar-danger,
+.progress-bar-info {
+	background-color: #67767D !important;
+	background-image: none !important;
+}
