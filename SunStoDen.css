@@ -1037,3 +1037,13 @@ body::after {
     background-color: #05181E !important;
     background-image: none !important;
 }
+/* Restore Lioden dashboard images (den tiles only) */
+#denOverview img,
+.denOverview img,
+.box img,
+.feature img {
+    display: block !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: none !important;
+}
