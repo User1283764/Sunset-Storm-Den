@@ -197,3 +197,22 @@ a:hover, a:focus {
 .panel-body {
     background: inherit !important;
 }
+/* === DESKTOP DEN PAGE FINAL FIX === */
+
+/* den-specific container override */
+#fraProfileContent,
+#fraProfileContent .panel,
+#fraProfileContent .panel-body {
+    background: transparent !important;
+}
+
+/* force main den background */
+#fraProfileContent > .row > .col-md-9 > .main {
+    background: var(--bgColor) !important;
+}
+
+/* sidebar den panels – no white bleed */
+#fraProfileContent .col-md-3 .panel,
+#fraProfileContent .col-md-3 .panel-body {
+    background: var(--pc3) !important;
+}
