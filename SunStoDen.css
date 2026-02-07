@@ -980,3 +980,10 @@ center > b > span {
     z-index: 9999;
     pointer-events: none;
 }
+/* === HEADER ART (SAFE, NO BREAKAGE) === */
+#header {
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    background-size: 180px auto;
+}
