@@ -9,7 +9,7 @@ Please do NOT remove this credit, unless your coding becomes unrecognizable from
 /* FONT (From Google Fonts) */
 
 
-@import url('FONT URL');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&display=swap');
 
 
 /* BACKGROUND */
@@ -18,7 +18,7 @@ Please do NOT remove this credit, unless your coding becomes unrecognizable from
 body {
 	background: url('BACKGROUND URL') center center fixed;
 	background-size: 100%;
-	font-family: 'FONT NAME';
+	font-family: 'Quicksand', sans-serif;
 	color: #2e2a2b
 }
 
@@ -178,7 +178,7 @@ h1 {
 	color: #000000;
 	font-size: 90px;
 	text-align: center;
-        font-family: 'FONT NAME'
+        font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -211,7 +211,7 @@ h3 {
 .sidebar h3 {
 	color: #000000 !important;
         font-size: 26px !important;
-        font-family: 'FONT NAME'
+        font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -755,4 +755,19 @@ input,
 select,
 textarea {
 	cursor: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png'), auto !important;
+}
+/* FORCE SOFT FONT */
+
+body,
+h1, h2, h3,
+.panel,
+.table,
+.navbar,
+.topbar,
+.breadcrumb,
+input,
+select,
+textarea,
+button {
+	font-family: 'Quicksand', sans-serif !important;
 }
