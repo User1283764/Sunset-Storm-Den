@@ -928,11 +928,6 @@ center > b > span {
     color: #05181E !important;
     border-color: #EFA872;
 }
-/* === NAVBAR FLOWER OVERLAY (SAFE, ANCHORED, UNCLIPPED) === */
-.navbar {
-    position: relative;
-    overflow: visible !important;
-}
 
 /* === NAVBAR SIZE LOCK === */
 .navbar {
@@ -942,38 +937,26 @@ center > b > span {
     position: relative;
     overflow: visible !important;
 }
-/* === HEADER FLOWER (SAFARI SAFE) === */
-#header {
-    position: relative;
+/* HEADER ART ANCHOR — SAFARI COMPATIBLE */
+.navbar {
+    position: relative !important;
+    overflow: visible !important;
 }
 
-#header::before {
+.navbar::before {
     content: "";
     position: absolute;
-    left: 24px;
-    top: 5px;
-    width: 180px;
-    height: 180px;
-    background: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png")
-        no-repeat center / contain;
-    pointer-events: none;
-    z-index: 50;
-}
-/* FLOATING HEADER ART — SAFARI SAFE */
-html::before {
-    content: "";
-    position: fixed;
-    top: 0;
+
+    top: -90px;      /* pulls it upward OUT of the bar */
     left: 0;
 
     width: 260px;
-    height: 220px;
+    height: 260px;
 
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position: top left;
 
-    z-index: 99999;
+    z-index: 9999;
     pointer-events: none;
 }
