@@ -983,3 +983,9 @@ center > b > span {
     position: relative;
     top: -10px;
 }
+/* Break Lioden's vertical centering */
+.navbar-nav > li > a {
+    line-height: normal !important;
+    padding-top: 12px !important;
+    padding-bottom: 0px !important;
+}
