@@ -921,3 +921,31 @@ center > b > span {
     height: auto !important;
     opacity: 1 !important;
 }
+/* UNCLIP HEADER */
+body,
+#header,
+#topbar,
+#main {
+    overflow: visible !important;
+}
+
+/* FORCE LIODEN LOGO */
+#logo {
+    display: block !important;
+    position: fixed !important;
+    top: 12px !important;
+    right: 12px !important;
+    z-index: 9999 !important;
+
+    background-color: #05181E !important;
+    padding: 6px 10px !important;
+    border-radius: 10px !important;
+}
+
+#logo img {
+    display: block !important;
+    max-height: 38px !important;
+    width: auto !important;
+    height: auto !important;
+    opacity: 1 !important;
+}
