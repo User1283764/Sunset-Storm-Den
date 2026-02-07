@@ -959,19 +959,21 @@ center > b > span {
     pointer-events: none;
     z-index: 50;
 }
-
-/* FLOATING HEADER ART */
-body::before {
+/* FLOATING HEADER ART — SAFARI SAFE */
+html::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
-    width: 260px;          /* adjust */
-    height: 220px;         /* adjust */
+
+    width: 260px;
+    height: 220px;
+
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top left;
-    z-index: 9999;
+
+    z-index: 99999;
     pointer-events: none;
 }
