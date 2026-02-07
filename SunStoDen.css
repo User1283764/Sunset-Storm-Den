@@ -959,3 +959,8 @@ center > b > span {
     pointer-events: none;
     z-index: 50;
 }
+/* Allow decorative elements to escape the navbar */
+.navbar,
+.navbar * {
+    overflow: visible !important;
+}
