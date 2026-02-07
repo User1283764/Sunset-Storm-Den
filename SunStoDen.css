@@ -895,9 +895,9 @@ h2 a {
 	color: #ffffff !important;
 	background-color: transparent !important;
 }
-/* LION THOUGHTS SENTENCE — CONTEXT TARGET */
+/* LION THOUGHTS / FLAVOR TEXT */
 
-#lion_profile p,
-#lion_profile span {
+center > div.center.b,
+center > b > span {
 	color: #EFA872 !important;
 }
