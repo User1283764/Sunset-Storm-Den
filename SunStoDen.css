@@ -968,10 +968,11 @@ center > b > span {
 .navbar-brand img {
     opacity: 0;
 }
-/* ===== CUSTOM TOP-LEFT ART ===== */
-
-/* allow art to escape navbar */
-.navbar {
+/* ===== FREE THE HEADER CONTAINERS ===== */
+.topbar,
+.navbar,
+.navbar-default,
+.container {
     overflow: visible !important;
 }
 
@@ -999,6 +1000,6 @@ center > b > span {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left top;
-    z-index: 50;
+    z-index: 999;
     pointer-events: none;
 }
