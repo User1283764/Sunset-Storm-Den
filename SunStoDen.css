@@ -930,12 +930,12 @@ center > b > span {
 }
 /* ===== TOP-LEFT HEADER ART (CLIP-SAFE) ===== */
 
-#topbar {
+#navbar {
     position: relative;
-    padding-left: 260px; /* forces menu text to the right */
+    padding-left: 260px;
 }
 
-#topbar::before {
+#navbar::before {
     content: "";
     position: absolute;
     top: 50%;
