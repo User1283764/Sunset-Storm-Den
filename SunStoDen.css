@@ -871,3 +871,13 @@ body::after {
 	background-color: #67767D !important;
 	background-image: none !important;
 }
+/* SIDEBAR SECTION TITLES (Achievements, Bookmarks, etc.) */
+
+.sidebar h2,
+.sidebar h3,
+.sidebar .panel-heading,
+.sidebar .panel-title,
+h2,
+h2 a {
+	color: #ffffff !important;
+}
