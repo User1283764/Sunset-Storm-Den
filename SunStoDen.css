@@ -6,7 +6,10 @@ https://www.lioden.com/topic.php?id=304429491963
 
 /* font import */
 @import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
-
+/* Custom Cursor */
+* {
+    cursor: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png'), auto !important;
+}
 /*variables*/
 :root {
     --fc1: #000000;
@@ -51,7 +54,7 @@ https://www.lioden.com/topic.php?id=304429491963
 /* Body */
 body {
     font-family: var(--mainFont);
-    background: #cdd2ad url('../../img/aesthetic/cottagecore.jpg') fixed;
+    background: #000000 url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif') fixed;
     background-position-y: center;
     background-position-x: center;
     /* DON'T CHANGE BELOW */
