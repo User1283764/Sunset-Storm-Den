@@ -964,3 +964,9 @@ center > b > span {
 .navbar * {
     overflow: visible !important;
 }
+/* ─── Allow header art to escape upward (top clipping fix) ─── */
+
+.container.main,
+.container.main > nav {
+    overflow: visible !important;
+}
