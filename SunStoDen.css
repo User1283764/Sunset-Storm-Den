@@ -937,18 +937,25 @@ center > b > span {
     position: relative;
     overflow: visible !important;
 }
-/* ─── Truly fixed decorative header art (Safari + Lioden safe) ─── */
+/* ─── Decorative header flower (Safari-safe faux anchor) ─── */
 
-html::before {
+/* Make navbar the anchor */
+.navbar {
+    position: relative;
+    padding-left: 200px; /* space for flower */
+}
+
+/* Flower art */
+.navbar::before {
     content: "";
-    position: fixed;
-    top: 32px;              /* sits between welcome bar & menu */
-    left: 12px;
+    position: absolute;
+    top: -55px;          /* pulls it ABOVE the bar */
+    left: 15px;
     width: 140px;
     height: 140px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
-    z-index: 99999;
+    z-index: 50;
 }
