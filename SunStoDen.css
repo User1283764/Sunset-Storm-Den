@@ -946,3 +946,28 @@ center > b > span {
     z-index: 10;
     pointer-events: none; /* keeps menu clickable */
 }
+/* Replace Lioden logo with custom art */
+.navbar-brand {
+    position: relative;
+    width: 220px;
+    height: 80px;
+}
+
+.navbar-brand img {
+    opacity: 0;
+}
+
+.navbar-brand::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 220px;
+    height: 80px;
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left center;
+    z-index: 5;
+    pointer-events: none;
+}
