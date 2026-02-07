@@ -861,3 +861,13 @@ body::after {
 	z-index: 9999;
 	pointer-events: none;
 }
+/* FIX BACKGROUND DUPLICATION IN CHAT / SIDEBAR */
+
+.sidebar,
+#chatMessageContainer,
+.s-chat,
+.s-chat-sidebar,
+.s-chat-container {
+	background-image: none !important;
+	background: rgba(0, 0, 0, 0.4) !important; /* keeps chat readable */
+}
