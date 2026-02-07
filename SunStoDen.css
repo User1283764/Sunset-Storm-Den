@@ -930,22 +930,22 @@ center > b > span {
 }
 /* ===== TOP-LEFT HEADER ART (CLIP-SAFE) ===== */
 
-#header {
+#topbar {
     position: relative;
-    padding-left: 260px; /* pushes menu text right */
+    padding-left: 260px; /* forces menu text to the right */
 }
 
-#header::before {
+#topbar::before {
     content: "";
     position: absolute;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-    width: 220px;
-    height: 140px;
+    width: 230px;
+    height: 150px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 2;
+    z-index: 5;
     pointer-events: none;
 }
