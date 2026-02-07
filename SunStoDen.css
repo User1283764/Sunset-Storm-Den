@@ -881,3 +881,17 @@ h2,
 h2 a {
 	color: #ffffff !important;
 }
+/* TOP NAV HEADER TEXT — FORCE WHITE */
+
+.navbar,
+.navbar li a,
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff !important;
+}
+.navbar li a:hover,
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover {
+	color: #ffffff !important;
+	background-color: transparent !important;
+}
