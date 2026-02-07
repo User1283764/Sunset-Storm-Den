@@ -168,3 +168,32 @@ a:hover, a:focus {
     border-radius: 10px;
     border: 1px solid var(--borderColor);
 }
+/* === STORM PANEL FIXES === */
+
+/* kill bootstrap white/grey panel layers */
+.main,
+.main .panel,
+.main .panel-body {
+    background: transparent !important;
+}
+
+/* enforce dark main panel */
+.main {
+    background: var(--bgColor) !important;
+}
+
+/* sidebar panels – remove white bleed */
+.sidebar .panel,
+.sidebar .panel-body {
+    background: var(--pc3) !important;
+}
+
+/* remove hidden white margins under sidebar boxes */
+.sidebar .panel {
+    margin-bottom: 15px;
+}
+
+/* ensure no default white shows through anywhere */
+.panel-body {
+    background: inherit !important;
+}
