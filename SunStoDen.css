@@ -960,3 +960,33 @@ center > b > span {
     z-index: 9999;
     pointer-events: none;
 }
+/* ─── Top-left decorative header art (Safari-safe overlap illusion) ─── */
+
+/* Lock the menu height so it cannot grow */
+#header {
+    position: relative !important;
+    height: 60px !important;
+    min-height: 60px !important;
+    overflow: visible !important;
+}
+
+/* Decorative art */
+#header::before {
+    content: "";
+    position: absolute;
+    top: -42px;              /* pulls art upward */
+    left: 12px;
+    width: 160px;            /* adjust if needed */
+    height: 160px;
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Push menu text right so it doesn't overlap the art */
+#header .navbar,
+#header ul {
+    padding-left: 180px !important;
+}
