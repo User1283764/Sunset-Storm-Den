@@ -901,26 +901,30 @@ center > div.center.b,
 center > b > span {
 	color: #EFA872 !important;
 }
-/* CUSTOM LIODEN BUTTON */
-.custom-lioden-button {
+/* FAKE LIODEN BUTTON */
+
+#fake-lioden-button {
     position: fixed;
-    top: 12px;
-    right: 12px;
+    top: 15px;
+    right: 20px;
     z-index: 9999;
-
-    background-color: #05181E;
-    color: #FFFFFF !important;
-    font-family: inherit;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none !important;
-
-    padding: 8px 14px;
-    border-radius: 12px;
-    transition: background-color 0.2s ease;
 }
 
-.custom-lioden-button:hover {
-    background-color: #1C3039;
+#fake-lioden-button a {
+    display: block;
+    padding: 10px 18px;
+    background: #05181E;
     color: #EFA872 !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    border-radius: 10px;
+    border: 2px solid #67767D;
+    transition: all 0.3s ease;
+}
+
+#fake-lioden-button a:hover {
+    background: #67767D;
+    color: #05181E !important;
+    border-color: #EFA872;
 }
