@@ -967,3 +967,18 @@ center > b > span {
 body {
     outline: 1px solid red !important;
 }
+/* FLOATING HEADER ART */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 260px;          /* adjust */
+    height: 220px;         /* adjust */
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top left;
+    z-index: 9999;
+    pointer-events: none;
+}
