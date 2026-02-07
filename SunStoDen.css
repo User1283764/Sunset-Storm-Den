@@ -957,3 +957,34 @@ center > b > span {
     z-index: 10;
     pointer-events: none;
 }
+/* === HEADER OVERFLOW UNLOCK === */
+
+#header {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 5;
+}
+
+.navbar {
+    position: relative !important;
+    padding-left: 220px;
+    min-height: 70px;
+    overflow: visible !important;
+    z-index: 6;
+}
+
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    width: 220px;
+    height: 160px;
+
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    z-index: 10;
+    pointer-events: none;
+}
