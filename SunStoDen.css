@@ -928,3 +928,21 @@ center > b > span {
     color: #05181E !important;
     border-color: #EFA872;
 }
+/* === Custom Top-Left Header Art (replaces Lioden button visually) === */
+.navbar::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 140px;          /* adjust if needed */
+    height: 100%;
+
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+
+    z-index: 10;
+    pointer-events: none; /* keeps menu clickable */
+}
