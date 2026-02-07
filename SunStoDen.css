@@ -895,10 +895,8 @@ h2 a {
 	color: #ffffff !important;
 	background-color: transparent !important;
 }
-/* LION THOUGHTS / PERSONALITY LINE */
+/* SPECIFIC LION THOUGHTS TEXT */
 
-.alert-info,
-.alert-info b,
-.alert-info strong {
+div.alert.alert-info {
 	color: #EFA872 !important;
 }
