@@ -929,3 +929,15 @@ center > b > span {
         brightness(100%)
         contrast(95%);
 }
+/* FIX LIODEN LOGO SIZE + POSITION */
+.navbar-brand {
+    padding: 0 !important;
+    height: 60px;
+}
+
+.navbar-brand img {
+    height: 45px !important;
+    width: auto !important;
+    max-height: 45px !important;
+    margin-top: 8px;
+}
