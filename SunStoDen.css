@@ -107,7 +107,7 @@ body {
 
 
 .breadcrumb::after {
-        content: "Template by Katie (#106445)";
+        content: "Layout by PantheraGamer";
         color: #000000;
         position: absolute;
         right: 13%; /* (This may need adjusting) */
