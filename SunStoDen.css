@@ -895,8 +895,9 @@ h2 a {
 	color: #ffffff !important;
 	background-color: transparent !important;
 }
-/* SPECIFIC LION THOUGHTS TEXT */
+/* LION THOUGHTS LINE (happy / awkward / frivolous) */
 
-div.alert.alert-info {
+div.col-md-12 > span,
+div.col-md-12 > p {
 	color: #EFA872 !important;
 }
