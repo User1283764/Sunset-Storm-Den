@@ -968,12 +968,30 @@ center > b > span {
 .navbar-brand img {
     opacity: 0;
 }
+/* ===== CUSTOM TOP-LEFT ART ===== */
+
+/* allow art to escape navbar */
+.navbar {
+    overflow: visible !important;
+}
+
+/* logo container */
+.navbar-brand {
+    position: relative;
+    width: 240px;
+    height: 100px;
+}
+
+/* hide original logo */
+.navbar-brand img {
+    opacity: 0;
+}
 
 /* custom art */
 .navbar-brand::before {
     content: "";
     position: absolute;
-    top: -55px; /* THIS is the overlap control */
+    top: -55px;
     left: 0;
     width: 240px;
     height: 140px;
