@@ -901,3 +901,23 @@ center > div.center.b,
 center > b > span {
 	color: #EFA872 !important;
 }
+/* FORCE LIODEN LOGO BACK */
+#logo {
+    display: inline-block !important;
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    z-index: 999 !important;
+
+    background-color: #05181E !important;
+    padding: 6px 10px !important;
+    border-radius: 10px !important;
+}
+
+#logo img {
+    display: block !important;
+    max-height: 38px !important;
+    width: auto !important;
+    height: auto !important;
+    opacity: 1 !important;
+}
