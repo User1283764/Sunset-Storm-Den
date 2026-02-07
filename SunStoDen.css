@@ -934,16 +934,25 @@ center > b > span {
     overflow: visible !important;
 }
 
-/* Decorative flower */
+/* === NAVBAR FLOWER === */
 .navbar::before {
     content: "";
     position: absolute;
-    left: 20px;
-    top: -40px; /* pushes it above the bar */
+    left: 24px;
+    top: -55px;
     width: 180px;
     height: 180px;
     background: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png")
         no-repeat center / contain;
     pointer-events: none;
-    z-index: 5;
+    z-index: 10;
+}
+
+/* === NAVBAR SIZE LOCK === */
+.navbar {
+    height: 70px !important;
+    min-height: 70px !important;
+    padding: 0 !important;
+    position: relative;
+    overflow: visible !important;
 }
