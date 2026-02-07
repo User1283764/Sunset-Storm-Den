@@ -970,3 +970,7 @@ center > b > span {
 .container.main > nav {
     overflow: visible !important;
 }
+/* Push navbar links right so they clear the flower */
+.navbar-nav {
+    margin-left: 160px;
+}
