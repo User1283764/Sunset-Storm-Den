@@ -959,14 +959,7 @@ center > b > span {
     pointer-events: none;
     z-index: 50;
 }
-/* TEST ANCHOR */
-#header,
-#headerwrap,
-#header-container,
-.topbar,
-body {
-    outline: 1px solid red !important;
-}
+
 /* FLOATING HEADER ART */
 body::before {
     content: "";
