@@ -933,8 +933,8 @@ center > b > span {
 body::before {
     content: "";
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 95;
+    left: 40;
     width: 260px;
     height: 180px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
