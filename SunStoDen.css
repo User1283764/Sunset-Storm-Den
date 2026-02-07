@@ -1047,3 +1047,32 @@ body::after {
     visibility: visible !important;
     background: none !important;
 }
+/* --- FORCE-RESTORE DEN TILE IMAGES ONLY --- */
+
+/* Step 1: undo Katie's global image suppression */
+img {
+    display: revert !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Step 2: explicitly hide sprites & decorative images again */
+#lion_image,
+#lion_image img,
+.lionImage,
+.lionImage img,
+#chat img,
+#comment img,
+.navbar img {
+    display: none !important;
+}
+
+/* Step 3: allow den dashboard images */
+#denOverview img,
+.denOverview img,
+.box img,
+.feature img,
+.col-md-4 img,
+.col-md-3 img {
+    display: block !important;
+}
