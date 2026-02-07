@@ -216,3 +216,42 @@ a:hover, a:focus {
 #fraProfileContent .col-md-3 .panel-body {
     background: var(--pc3) !important;
 }
+/* === HARD RESET FOR DESKTOP DEN PANELS === */
+
+/* remove ALL default bootstrap panel backgrounds */
+.panel,
+.panel-body,
+.panel-heading,
+.panel-footer,
+.well,
+.main,
+.col-md-9,
+.col-md-3 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* re-apply main panel */
+.main {
+    background: var(--bgColor) !important;
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}
+
+/* re-apply sidebar panels */
+.sidebar .panel {
+    background: var(--pc3) !important;
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}
+
+/* ensure sidebar content inherits correctly */
+.sidebar .panel-body {
+    background: inherit !important;
+}
+
+/* kill invisible white spacing */
+.panel-body,
+.panel {
+    box-shadow: none !important;
+}
