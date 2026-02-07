@@ -991,3 +991,12 @@ center > b > span {
 .topbar {
     position: relative;
 }
+/* === NAVBAR DECORATIVE ART (STABLE METHOD) === */
+.navbar {
+    background-image:
+        url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png"),
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    background-size: 160px auto;
+}
