@@ -941,3 +941,6 @@ center > b > span {
     max-height: 45px !important;
     margin-top: 8px;
 }
+.navbar-brand img {
+    position: relative !important;
+}
