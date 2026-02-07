@@ -797,3 +797,13 @@ button,
 h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nunito', sans-serif !important;
 }
+/* FORCE BACKGROUND IMAGE — LIODEN OVERRIDE */
+
+html,
+body {
+	background-image: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif') !important;
+	background-position: center center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+}
