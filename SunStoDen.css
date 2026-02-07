@@ -928,78 +928,19 @@ center > b > span {
     color: #05181E !important;
     border-color: #EFA872;
 }
-/* === Custom Top-Left Header Art (replaces Lioden button visually) === */
-.navbar::before {
+/* ===== TOP-LEFT HEADER ART (CLIP-SAFE) ===== */
+
+body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-
-    width: 140px;          /* adjust if needed */
-    height: 100%;
-
-    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: left center;
-
-    z-index: 10;
-    pointer-events: none; /* keeps menu clickable */
-}
-/* Replace Lioden logo with custom art */
-.navbar-brand {
-    position: relative;
-    width: 220px;
-    height: 80px;
-}
-/* allow art to escape navbar */
-.navbar {
-    overflow: visible !important;
-}
-
-/* logo container */
-.navbar-brand {
-    position: relative;
-    width: 240px;
-    height: 100px;
-}
-
-/* hide original logo */
-.navbar-brand img {
-    opacity: 0;
-}
-/* ===== FREE THE HEADER CONTAINERS ===== */
-.topbar,
-.navbar,
-.navbar-default,
-.container {
-    overflow: visible !important;
-}
-
-/* logo container */
-.navbar-brand {
-    position: relative;
-    width: 240px;
-    height: 100px;
-}
-
-/* hide original logo */
-.navbar-brand img {
-    opacity: 0;
-}
-
-/* custom art */
-.navbar-brand::before {
-    content: "";
-    position: absolute;
-    top: -55px;
-    left: 0;
-    width: 240px;
-    height: 140px;
+    width: 260px;
+    height: 180px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left top;
-    z-index: 999;
+    background-position: top left;
+    z-index: 9999;
     pointer-events: none;
 }
