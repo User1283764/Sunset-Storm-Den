@@ -952,22 +952,35 @@ center > b > span {
     width: 220px;
     height: 80px;
 }
+/* allow art to escape navbar */
+.navbar {
+    overflow: visible !important;
+}
 
+/* logo container */
+.navbar-brand {
+    position: relative;
+    width: 240px;
+    height: 100px;
+}
+
+/* hide original logo */
 .navbar-brand img {
     opacity: 0;
 }
 
+/* custom art */
 .navbar-brand::before {
     content: "";
     position: absolute;
-    top: -5px;
+    top: -55px; /* THIS is the overlap control */
     left: 0;
-    width: 220px;
-    height: 80px;
+    width: 240px;
+    height: 140px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: left center;
-    z-index: 5;
+    background-position: left top;
+    z-index: 50;
     pointer-events: none;
 }
