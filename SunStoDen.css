@@ -746,3 +746,13 @@ textarea {
 	border-radius: 12px !important;
 	overflow: hidden;
 }
+/* CUSTOM CURSOR + OVERRIDE */
+
+body,
+a,
+button,
+input,
+select,
+textarea {
+	cursor: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png'), auto !important;
+}
