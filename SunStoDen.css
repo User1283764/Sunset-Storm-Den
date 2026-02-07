@@ -978,3 +978,8 @@ center > b > span {
     align-items: center;
     margin-top: 0;
 }
+/* Force navbar links back up */
+.navbar-nav > li > a {
+    position: relative;
+    top: -10px;
+}
