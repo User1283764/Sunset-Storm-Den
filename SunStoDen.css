@@ -937,29 +937,7 @@ center > b > span {
     position: relative;
     overflow: visible !important;
 }
-/* HEADER ART ANCHOR — SAFARI COMPATIBLE */
-.navbar {
-    position: relative !important;
-    overflow: visible !important;
-}
 
-.navbar::before {
-    content: "";
-    position: absolute;
-
-    top: -90px;      /* pulls it upward OUT of the bar */
-    left: 0;
-
-    width: 260px;
-    height: 260px;
-
-    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    z-index: 9999;
-    pointer-events: none;
-}
 /* ─── Top-left decorative header art (Safari-safe overlap illusion) ─── */
 
 /* Lock the menu height so it cannot grow */
