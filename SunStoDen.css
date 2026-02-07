@@ -989,3 +989,33 @@ center > b > span {
     padding-top: 4px !important;
     padding-bottom: 0px !important;
 }
+/* --- FIX CHAT BOX BACKGROUND & SPRITE BLEED --- */
+
+/* Main chat container */
+#fra_chatContainer,
+#chatMessageContainer,
+.s-chat-container {
+    background: #05181E !important;
+    background-image: none !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Individual chat messages */
+.s-chat-message,
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(odd) {
+    background-image: none !important;
+}
+
+/* Prevent fixed/absolute sprites from rendering inside chat */
+#fra_chatContainer::before,
+#fra_chatContainer::after {
+    content: none !important;
+}
+
+/* Extra safety: block any page-wide pseudo elements */
+body::before,
+body::after {
+    pointer-events: none;
+}
