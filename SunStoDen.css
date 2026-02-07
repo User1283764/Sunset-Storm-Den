@@ -836,3 +836,12 @@ button,
 h1, h2, h3, h4, h5, h6 {
 	color: #ffffff !important;
 }
+.progress div {
+	color: #ffffff !important;
+}
+.breadcrumb::after {
+	color: #ffffff !important;
+}
+a:hover {
+	color: #EFA872 !important; /* sunset accent — change if you want */
+}
