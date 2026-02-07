@@ -1076,3 +1076,12 @@ img {
 .col-md-3 img {
     display: block !important;
 }
+/* Restore Lioden den tile backgrounds */
+.denOverview .box,
+.denOverview .feature,
+.denOverview .col-md-4,
+.denOverview .col-md-3 {
+    background-image: revert !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
