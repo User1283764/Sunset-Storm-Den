@@ -721,3 +721,28 @@ a[href$="unsorted.php?id=PLAYER ID"]>div.cave-grid>img /* Unsorted */ {
 			width: 790px;
 		}
 	}
+/* FORCE ROUNDED CORNERS — LIODEN OVERRIDE */
+
+.panel,
+.container.main,
+.topbar,
+.navbar,
+.breadcrumb,
+.table,
+.feature,
+.item,
+.item-header,
+.cave-grid,
+.mound-grid,
+.smallbox,
+.mediumbox,
+.largebox,
+.smallhoverbox,
+.mediumhoverbox,
+.largehoverbox,
+input,
+select,
+textarea {
+	border-radius: 12px !important;
+	overflow: hidden;
+}
