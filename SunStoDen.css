@@ -901,3 +901,31 @@ center > div.center.b,
 center > b > span {
 	color: #EFA872 !important;
 }
+/* RESTORE LIODEN LOGO BUTTON */
+.navbar-brand img {
+    content: url("https://static.lioden.com/images/layout/logo.png") !important;
+}
+/* LIODEN LOGO COLOR MATCH */
+.navbar-brand img {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(19%)
+        sepia(19%)
+        saturate(420%)
+        hue-rotate(155deg)
+        brightness(95%)
+        contrast(90%);
+}
+/* LIODEN LOGO HOVER ACCENT */
+.navbar-brand img:hover {
+    filter:
+        brightness(0)
+        saturate(100%)
+        invert(78%)
+        sepia(34%)
+        saturate(720%)
+        hue-rotate(345deg)
+        brightness(100%)
+        contrast(95%);
+}
