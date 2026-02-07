@@ -871,3 +871,42 @@ body::after {
 	background-image: none !important;
 	background: rgba(0, 0, 0, 0.4) !important; /* keeps chat readable */
 }
+/* MAIN BACK PANEL — KEEP TRANSPARENT */
+
+.container.main {
+	background: rgba(0, 0, 0, 0.35) !important;
+	backdrop-filter: blur(6px);
+}
+/* ALL OTHER PANELS — OPAQUE TEAL */
+
+.panel,
+.sidebar .panel,
+.table,
+.alert,
+.feature,
+.item,
+.item-header,
+.cave-grid,
+.mound-grid,
+.smallbox,
+.mediumbox,
+.largebox,
+.smallhoverbox,
+.mediumhoverbox,
+.largehoverbox,
+#chatMessageContainer,
+.s-chat-message,
+.s-chat-sidebar,
+.progress,
+.top,
+.bottom,
+th,
+.inner-table .left,
+.table .left {
+	background: #05181E !important;
+}
+.panel *,
+.table *,
+.sidebar * {
+	background-color: transparent;
+}
