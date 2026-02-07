@@ -16,10 +16,11 @@ Please do NOT remove this credit, unless your coding becomes unrecognizable from
 
 
 body {
-	background: url('BACKGROUND URL') center center fixed;
-	background-size: 100%;
-	font-family: 'Quicksand', sans-serif;
-	color: #2e2a2b
+	background: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/refs/heads/main/Sunset%20Storm%20Background.avif') center center fixed !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-attachment: fixed !important;
+	color: #2e2a2b;
 }
 
 
