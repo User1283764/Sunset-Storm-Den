@@ -1019,3 +1019,21 @@ body::before,
 body::after {
     pointer-events: none;
 }
+/* Lock chat box so page elements cannot show through */
+#fra_chatContainer,
+#chatMessageContainer,
+.s-chat-container {
+    background-color: #05181E !important;
+    background-image: none !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+}
+
+/* Ensure messages are opaque */
+.s-chat-message,
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(odd),
+#chatMessagePinned {
+    background-color: #05181E !important;
+    background-image: none !important;
+}
