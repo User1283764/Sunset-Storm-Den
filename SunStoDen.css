@@ -1000,3 +1000,9 @@ center > b > span {
     background-position: left 20px center;
     background-size: 160px auto;
 }
+/* === NAVBAR ART OVERRIDE (SAFARI + LIODEN SAFE) === */
+.navbar {
+    background:
+        url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png") left 20px center / 160px auto no-repeat,
+        rgba(1, 1, 1, 0.5) !important;
+}
