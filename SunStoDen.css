@@ -933,7 +933,9 @@ center > b > span {
 .navbar {
     position: relative !important;
     padding-left: 220px;
-min-height: 70px;
+    min-height: 70px;
+    overflow: visible !important;
+}
 
 }
 
