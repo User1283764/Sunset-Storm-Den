@@ -937,25 +937,18 @@ center > b > span {
     position: relative;
     overflow: visible !important;
 }
-/* ─── Fixed decorative top-left art (Lioden-safe, Safari-safe) ─── */
+/* ─── Truly fixed decorative header art (Safari + Lioden safe) ─── */
 
-body::before {
+html::before {
     content: "";
     position: fixed;
-    top: -40px;              /* aligns with menu bar */
+    top: 32px;              /* sits between welcome bar & menu */
     left: 12px;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
     z-index: 99999;
-}
-
-/* Push menu items right so they don't sit under the art */
-.topbar,
-.navbar,
-nav {
-    padding-left: 180px !important;
 }
