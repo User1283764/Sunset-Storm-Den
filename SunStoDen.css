@@ -937,32 +937,25 @@ center > b > span {
     position: relative;
     overflow: visible !important;
 }
-/* ─── Top-left anchored header art (Katie-base safe, Safari-safe) ─── */
+/* ─── Fixed decorative top-left art (Lioden-safe, Safari-safe) ─── */
 
-/* Ensure the top bar can be overlapped */
-.topbar {
-    position: relative !important;
-    overflow: visible !important;
-}
-
-/* Decorative art image */
-.topbar::before {
+body::before {
     content: "";
-    position: absolute;
-    top: -55px;          /* overlap above the bar */
+    position: fixed;
+    top: 6px;              /* aligns with menu bar */
     left: 12px;
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
     pointer-events: none;
-    z-index: 10000;
+    z-index: 99999;
 }
 
-/* Push navigation text to the right */
-.topbar ul,
-.topbar .nav,
-.topbar nav {
+/* Push menu items right so they don't sit under the art */
+.topbar,
+.navbar,
+nav {
     padding-left: 180px !important;
 }
