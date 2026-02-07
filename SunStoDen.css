@@ -961,3 +961,10 @@ img[src*="logo"],
     max-height: 60px !important;
     overflow: hidden !important;
 }
+/* RESTORE LIODEN LOGO */
+#logo,
+#logo img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
