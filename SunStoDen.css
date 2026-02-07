@@ -928,24 +928,28 @@ center > b > span {
     color: #05181E !important;
     border-color: #EFA872;
 }
-/* ===== TOP-LEFT HEADER ART (CLIP-SAFE) ===== */
+/* === NAVBAR ART ANCHOR FIX === */
 
-#navbar {
-    position: relative;
+.navbar {
+    position: relative !important;
     padding-left: 260px;
 }
 
-#navbar::before {
+/* Decorative image replacing Lioden button area */
+.navbar::before {
     content: "";
     position: absolute;
     top: 50%;
     left: 20px;
     transform: translateY(-50%);
-    width: 230px;
-    height: 150px;
+    width: 220px;
+    height: 140px;
+
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Kenyan%20Flower%20(Lioden).png");
     background-repeat: no-repeat;
     background-size: contain;
-    z-index: 5;
+    background-position: left center;
+
+    z-index: 10;
     pointer-events: none;
 }
