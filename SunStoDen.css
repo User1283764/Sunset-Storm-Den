@@ -1301,3 +1301,13 @@ img {
 #lion_image {
     overflow: visible !important;
 }
+/* SAFARI + LIODEN LION IMAGE HARD RESET */
+img {
+    content: unset !important;
+}
+#lion_image img {
+    content: unset !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
