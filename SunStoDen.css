@@ -1190,3 +1190,16 @@ img {
     background: rgba(0, 0, 0, 0.75) !important;
     background-image: none !important;
 }
+/* HARD RESET CHAT BACKGROUND – OVERRIDES KATIE BASE */
+#chatContainer,
+#chatContainer *,
+#chatMessageContainer,
+#chatMessageList {
+    background-image: none !important;
+}
+
+#chatContainer {
+    background-color: rgba(10, 15, 18, 0.85) !important;
+    border-radius: 18px;
+    overflow: hidden;
+}
