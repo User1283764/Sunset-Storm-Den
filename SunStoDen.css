@@ -1272,3 +1272,15 @@ img[src*="lion.php"] {
     z-index: 10 !important;
 }
 pointer-events: auto !important;
+/* Force lion image itself to be visible */
+#lion_image img {
+    opacity: 1 !important;
+    visibility: visible !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
+}
+/* Prevent parent containers from fading the lion */
+#lion_image,
+#lion_image * {
+    opacity: 1 !important;
+}
