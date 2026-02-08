@@ -1144,3 +1144,10 @@ img {
 #fraProfileContent .box span {
     color: #ffffff !important;
 }
+/* Restore Lioden cave images */
+.cave-grid img {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    background: none !important;
+}
