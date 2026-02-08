@@ -1122,3 +1122,25 @@ img {
 .col-md-9 .feature span {
     color: #ffffff !important;
 }
+/* Hybrid restore for Den overview boxes */
+#fraProfileContent .box {
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(5, 24, 30, 0.55),
+            rgba(5, 24, 30, 0.55)
+        ),
+        url("https://static.lioden.com/images/dynamic/backgrounds/Savannah.png") !important;
+    background-size: cover !important;
+    background-position: center !important;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Keep text readable */
+#fraProfileContent .box,
+#fraProfileContent .box a,
+#fraProfileContent .box b,
+#fraProfileContent .box span {
+    color: #ffffff !important;
+}
