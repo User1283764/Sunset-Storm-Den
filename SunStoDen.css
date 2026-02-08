@@ -1311,3 +1311,24 @@ img {
     visibility: visible !important;
     opacity: 1 !important;
 }
+/* === FORCE LION IMAGE TO DISPLAY CORRECTLY === */
+.lion-image-block,
+#lion_image,
+.lion-image {
+    position: relative !important;
+    min-height: 420px !important;
+    overflow: visible !important;
+    z-index: 5 !important;
+}
+
+.lion-image-block img,
+#lion_image img,
+.lion-image img {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 10 !important;
+}
