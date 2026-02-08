@@ -328,9 +328,9 @@ td.bottom a {
 
 
 .inner-table .left {
-	background: rgba(155, 226, 242, 0.6) !important;
-        color: #2e2a2b;
-	border-radius: 10px
+    background: #67767D !important;
+    color: #ffffff;
+    border-radius: 10px;
 }
 
 
