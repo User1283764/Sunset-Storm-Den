@@ -672,9 +672,7 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* CAVE / MOUND IMAGES */
 
-a[href$="CAVE ID"]>div.cave-grid>img {
-	content: url('IMAGE URL') !important
-}
+
 
 
 a[href$="lionoverview.php?id=PLAYER ID"]>div.cave-grid>img /* Pride Overview */ {
