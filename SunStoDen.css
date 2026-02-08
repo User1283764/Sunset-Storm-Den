@@ -1246,3 +1246,10 @@ img {
 #chatRoomContainer {
     background-color: rgba(0, 0, 0, 0.65) !important;
 }
+/* Den stat label boxes (Level, Stats, etc) */
+#denOverview td.left {
+    background: #67767D !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 10px 14px !important;
+}
