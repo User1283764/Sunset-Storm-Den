@@ -1085,3 +1085,8 @@ img {
     background-size: cover !important;
     background-position: center !important;
 }
+/* Restore Lioden den tile images */
+.col-md-9 .feature,
+.col-md-9 .box {
+    background: revert !important;
+}
