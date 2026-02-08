@@ -1096,3 +1096,29 @@ img {
 .box {
     all: unset !important;
 }
+/* ===============================
+   Hybrid Den Tile Visual Restore
+   =============================== */
+
+/* Base tile styling */
+.col-md-9 .feature {
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(5, 24, 30, 0.55),
+            rgba(5, 24, 30, 0.55)
+        ),
+        url("https://static.lioden.com/images/dynamic/backgrounds/Savannah.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Text stays readable */
+.col-md-9 .feature,
+.col-md-9 .feature a,
+.col-md-9 .feature b,
+.col-md-9 .feature span {
+    color: #ffffff !important;
+}
