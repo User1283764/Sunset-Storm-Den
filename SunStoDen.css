@@ -1308,3 +1308,50 @@ img {
     background: none !important;
     position: static !important;
 }
+/* ===== CHAT BOX — MATCH MAIN PANELS ===== */
+
+/* Clear inherited junk */
+#fra_chatContainer *,
+#chatMessageContainer,
+#txtChatContainer {
+    background-image: none !important;
+}
+
+/* Main chat background */
+#fra_chatContainer {
+    background: rgba(5, 24, 30, 0.65) !important;
+    border-radius: 18px !important;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.45) !important;
+    padding: 12px !important;
+}
+
+/* Message area */
+#chatMessageContainer {
+    background: rgba(5, 24, 30, 0.55) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+}
+
+/* Text input area */
+#txtChatContainer {
+    background: rgba(5, 24, 30, 0.55) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+    margin-top: 10px !important;
+}
+
+/* Individual messages */
+.s-chat-message {
+    background: rgba(28, 48, 57, 0.65) !important;
+    border-radius: 12px !important;
+    padding: 8px 10px !important;
+    margin-bottom: 6px !important;
+}
+
+/* HARD STOP: prevent sprite bleed */
+#fra_chatContainer img {
+    content: normal !important;
+    background: none !important;
+    position: static !important;
+    filter: none !important;
+}
