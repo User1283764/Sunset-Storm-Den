@@ -1165,3 +1165,13 @@ img {
     position: relative !important;
     z-index: 5 !important;
 }
+/* === REMOVE OVERLAY BLOCKING CAVE IMAGES === */
+#fraOrganizationBlock .cave-grid::before,
+#fraOrganizationBlock .cave-grid::after {
+    content: none !important;
+    display: none !important;
+}
+
+#fraOrganizationBlock .cave-grid {
+    background: none !important;
+}
