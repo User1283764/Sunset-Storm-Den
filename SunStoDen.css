@@ -1177,3 +1177,7 @@ img {
     visibility: visible !important;
     background: none !important;
 }
+#fraOrganizationBlock .cave-grid img {
+    border-radius: 14px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
+}
