@@ -1151,3 +1151,17 @@ img {
     opacity: 1 !important;
     background: none !important;
 }
+/* === FORCE Lioden cave images to show === */
+#fraOrganizationBlock .cave-grid {
+    background: none !important;
+    overflow: visible !important;
+    height: auto !important;
+}
+
+#fraOrganizationBlock .cave-grid img {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 5 !important;
+}
