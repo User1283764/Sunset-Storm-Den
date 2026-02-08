@@ -1253,3 +1253,10 @@ img {
     border-radius: 14px !important;
     padding: 10px 14px !important;
 }
+/* Den stat pills (Level, Stats, Lionesses, etc) */
+table td.left {
+    background-color: #67767D !important;
+    color: #ffffff !important;
+    border-radius: 14px !important;
+    padding: 10px 14px !important;
+}
