@@ -1203,3 +1203,13 @@ img {
     border-radius: 18px;
     overflow: hidden;
 }
+/* STAT / INFO PILL COLOUR */
+.denOverview .label,
+.denOverview .label-default,
+.denOverview span.label,
+.denOverview .btn,
+.denOverview .btn-default {
+    background-color: #67767D !important;
+    color: #ffffff !important;
+    border: none !important;
+}
