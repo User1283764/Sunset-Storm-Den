@@ -981,17 +981,6 @@ center > b > span {
     padding-top: 4px !important;
     padding-bottom: 0px !important;
 }
-/* --- FIX CHAT BOX BACKGROUND & SPRITE BLEED --- */
-
-/* Main chat container */
-#fra_chatContainer,
-#chatMessageContainer,
-.s-chat-container {
-    background: #05181E !important;
-    background-image: none !important;
-    position: relative;
-    overflow: hidden;
-}
 
 /* Individual chat messages */
 .s-chat-message,
@@ -1010,15 +999,6 @@ center > b > span {
 body::before,
 body::after {
     pointer-events: none;
-}
-/* Lock chat box so page elements cannot show through */
-#fra_chatContainer,
-#chatMessageContainer,
-.s-chat-container {
-    background-color: #05181E !important;
-    background-image: none !important;
-    opacity: 1 !important;
-    overflow: hidden !important;
 }
 
 /* Ensure messages are opaque */
@@ -1168,28 +1148,7 @@ img {
     border-radius: 14px;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.45);
 }
-/* FIX CHAT BOX BACKGROUND */
-#chatMessageContainer,
-#chatMessageList,
-#chatControls,
-#chatRoomContainer,
-#chatContainer {
-    background: rgba(0, 0, 0, 0.75) !important;
-    background-image: none !important;
-}
-/* HARD RESET CHAT BACKGROUND – OVERRIDES KATIE BASE */
-#chatContainer,
-#chatContainer *,
-#chatMessageContainer,
-#chatMessageList {
-    background-image: none !important;
-}
 
-#chatContainer {
-    background-color: rgba(10, 15, 18, 0.85) !important;
-    border-radius: 18px;
-    overflow: hidden;
-}
 /* STAT / INFO PILL COLOUR */
 .denOverview .label,
 .denOverview .label-default,
@@ -1200,16 +1159,7 @@ img {
     color: #ffffff !important;
     border: none !important;
 }
-/* FORCE CHAT BOX TO MATCH DARK PANELS */
-#chatMessageContainer,
-#chatMessageList,
-#chatRoomContainer,
-.s-chat-message,
-.chat-box,
-.chat-container {
-    background: rgba(0, 0, 0, 0.65) !important;
-    background-image: none !important;
-}
+
 /* DEN STAT PILL COLOUR */
 .denOverview dt {
     background-color: #67767D !important;
@@ -1223,16 +1173,7 @@ img {
     color: #ffffff !important;
     border-radius: 18px !important;
 }
-/* HARD LOCK CHAT BACKGROUND */
-#chatMessageContainer *,
-#chatRoomContainer *,
-.s-chat-message {
-    background-image: none !important;
-}
-#chatMessageContainer,
-#chatRoomContainer {
-    background-color: rgba(0, 0, 0, 0.65) !important;
-}
+
 /* Den stat label boxes (Level, Stats, etc) */
 #denOverview td.left {
     background: #67767D !important;
@@ -1331,22 +1272,6 @@ img {
     visibility: visible !important;
     opacity: 1 !important;
     z-index: 10 !important;
-}
-/* === CHAT BOX PANEL FIX === */
-#chatMessageContainer,
-#chatMessageContainer .s-chat-message,
-#chatMessageContainer .panel,
-#chatMessageContainer .well {
-    background: rgba(5, 24, 30, 0.65) !important; /* same dark panel feel */
-    border-radius: 18px !important;
-    box-shadow: inset 0 0 25px rgba(0,0,0,0.45) !important;
-    border: none !important;
-}
-
-/* Remove any background images or sprites inside chat */
-#chatMessageContainer img {
-    background: none !important;
-    content: normal !important;
 }
 
 /* Chat text spacing & readability */
