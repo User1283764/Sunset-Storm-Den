@@ -1048,17 +1048,6 @@ img {
     visibility: visible !important;
 }
 
-/* Step 2: explicitly hide sprites & decorative images again */
-#lion_image,
-#lion_image img,
-.lionImage,
-.lionImage img,
-#chat img,
-#comment img,
-.navbar img {
-    display: none !important;
-}
-
 /* Step 3: allow den dashboard images */
 #denOverview img,
 .denOverview img,
