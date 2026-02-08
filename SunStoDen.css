@@ -1258,3 +1258,16 @@ table td.left {
     border-radius: 14px !important;
     padding: 10px 14px !important;
 }
+/* Restore main lion profile image */
+#lion_image,
+#lion_image img,
+.lion-image,
+.lion-image img,
+img[src*="dynasty"],
+img[src*="lion.php"] {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important;
+}
