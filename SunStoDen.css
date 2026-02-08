@@ -1229,3 +1229,20 @@ img {
     color: #ffffff !important;
     border: none !important;
 }
+/* DEN STAT PILL COLOUR — CORRECT TARGET */
+.feature a,
+.feature span {
+    background-color: #67767D !important;
+    color: #ffffff !important;
+    border-radius: 18px !important;
+}
+/* HARD LOCK CHAT BACKGROUND */
+#chatMessageContainer *,
+#chatRoomContainer *,
+.s-chat-message {
+    background-image: none !important;
+}
+#chatMessageContainer,
+#chatRoomContainer {
+    background-color: rgba(0, 0, 0, 0.65) !important;
+}
