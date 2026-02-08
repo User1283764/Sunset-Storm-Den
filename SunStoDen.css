@@ -1284,3 +1284,15 @@ pointer-events: auto !important;
 #lion_image * {
     opacity: 1 !important;
 }
+/* RESTORE lion portrait by force */
+#lion_image img {
+    content: normal !important;
+    background: none !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+/* Undo global img content overrides */
+img {
+    content: normal !important;
+}
