@@ -1169,3 +1169,11 @@ img {
 #fraOrganizationBlock .cave-grid {
     background: none !important;
 }
+#fraOrganizationBlock .cave-grid img {
+    display: block !important;
+    width: 100% !important;
+    height: auto !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    background: none !important;
+}
