@@ -1090,3 +1090,11 @@ img {
 .col-md-9 .box {
     background: revert !important;
 }
+/* FORCE restore Lioden den tile images */
+.col-md-9 .feature,
+.col-md-9 .feature *,
+.col-md-9 .box,
+.col-md-9 .box * {
+    background-image: initial !important;
+    background-color: initial !important;
+}
