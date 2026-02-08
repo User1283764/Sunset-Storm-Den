@@ -1285,3 +1285,19 @@ pointer-events: auto !important;
 img {
     content: normal !important;
 }
+/* FORCE LION ABOVE PANELS */
+#lion_image,
+#lion_image img,
+.lion-image,
+.lion-image img {
+    position: relative !important;
+    z-index: 50 !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+/* PREVENT CONTAINERS FROM CLIPPING THE LION */
+#lion_image {
+    overflow: visible !important;
+}
