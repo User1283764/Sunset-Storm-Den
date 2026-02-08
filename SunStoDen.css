@@ -672,12 +672,6 @@ div.container.main>div:nth-child(1)>nav>div.navbar-header>a>img {
 
 /* CAVE / MOUND IMAGES */
 
-
-div.cave-grid>img /* Pregnant Lionesses */ {
-	content: url('IMAGE URL') !important
-}
-
-
 a[href$="CAVE ID"]>div.cave-grid>img {
 	content: url('IMAGE URL') !important
 }
