@@ -1184,4 +1184,10 @@ img {
     opacity: 1 !important;
     z-index: 10 !important;
 }
-
+/* CHAT NUCLEAR TEST */
+#fra_chatContainer,
+#chatMessageContainer,
+#txtChatContainer,
+.s-chat-message {
+    background: magenta !important;
+}
