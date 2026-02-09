@@ -248,47 +248,6 @@ h3 {
 }
 
 
-/* CHAT */
-
-
-.s-chat-message:nth-child(even) /* Even Numbered Messages */ {
-	background: rgba(1, 1, 1, 0.5) !important;
-        color: #000000 !important;
-	border: none !important
-}
-
-
-.s-chat-message:nth-child(odd) /* Odd Numbered Messages */ {
-	background: rgba(1, 1, 1, 0.5) !important;
-        color: #000000 !important;
-	border: none !important
-}
-
-
-.s-chat-message__pinned /* Pinned Message */ {
-	background: rgba(1, 1, 1, 0.5) !important;
-        color: #000000 !important;
-	border: none !important
-}
-
-
-.s-chat-message_timestamp /* Timestamps */ {
-	color: #000000 !important;
-}
-
-
-div#chatMessageContainer {
-	border: none !important;
-}
-
-
-button#label_currentChannel /* Channel Button ie. Main, Sales */ {
-	background: rgba(1, 1, 1, 0.5) !important;
-        color: #000000 !important;
-	border: none !important
-}
-
-
 /* LION INFO TABLE (Level, Stats, Territory Count, Etc.) */
 
 
@@ -982,19 +941,6 @@ center > b > span {
     padding-bottom: 0px !important;
 }
 
-/* Individual chat messages */
-.s-chat-message,
-.s-chat-message:nth-child(even),
-.s-chat-message:nth-child(odd) {
-    background-image: none !important;
-}
-
-/* Prevent fixed/absolute sprites from rendering inside chat */
-#fra_chatContainer::before,
-#fra_chatContainer::after {
-    content: none !important;
-}
-
 /* Extra safety: block any page-wide pseudo elements */
 body::before,
 body::after {
@@ -1281,16 +1227,6 @@ img {
 }
 /* ===== FORCE CHAT BOX TO MATCH PANELS ===== */
 
-/* Kill ALL backgrounds inside chat */
-#chat *,
-#chat .panel,
-#chat .panel-body,
-#chat .well,
-#chat .s-chat-message,
-#chat .chatMessage {
-    background: none !important;
-    background-image: none !important;
-}
 
 /* Rebuild chat background to match panels */
 #chat .panel-body,
@@ -1307,14 +1243,6 @@ img {
     content: normal !important;
     background: none !important;
     position: static !important;
-}
-/* ===== CHAT BOX — MATCH MAIN PANELS ===== */
-
-/* Clear inherited junk */
-#fra_chatContainer *,
-#chatMessageContainer,
-#txtChatContainer {
-    background-image: none !important;
 }
 
 /* Main chat background */
@@ -1354,4 +1282,71 @@ img {
     background: none !important;
     position: static !important;
     filter: none !important;
+}
+/* ===============================
+   CHAT — HARD RESET + REBUILD
+   =============================== */
+
+/* 1. ABSOLUTE STOP: block page pseudo-elements from chat */
+#fra_chatContainer::before,
+#fra_chatContainer::after,
+#fra_chatContainer *::before,
+#fra_chatContainer *::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* 2. Kill inherited backgrounds & images */
+#fra_chatContainer,
+#fra_chatContainer *,
+#chatMessageContainer,
+#txtChatContainer {
+    background-image: none !important;
+}
+
+/* 3. Chat outer shell (matches panels) */
+#fra_chatContainer {
+    background: rgba(5, 24, 30, 0.65) !important;
+    border-radius: 18px !important;
+    box-shadow: inset 0 0 30px rgba(0,0,0,0.45) !important;
+    padding: 12px !important;
+    overflow: hidden !important;
+}
+
+/* 4. Message scroll area */
+#chatMessageContainer {
+    background: rgba(5, 24, 30, 0.55) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+}
+
+/* 5. Input area */
+#txtChatContainer {
+    background: rgba(5, 24, 30, 0.55) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+    margin-top: 10px !important;
+}
+
+/* 6. Individual messages (rounded + clean) */
+.s-chat-message {
+    background: rgba(28, 48, 57, 0.7) !important;
+    border-radius: 14px !important;
+    padding: 10px 14px !important;
+    margin-bottom: 8px !important;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.35) !important;
+}
+
+/* 7. Pinned messages */
+#chatMessagePinned {
+    background: rgba(28, 48, 57, 0.85) !important;
+    border-radius: 14px !important;
+}
+
+/* 8. HARD BLOCK images/sprites inside chat */
+#fra_chatContainer img {
+    background: none !important;
+    position: static !important;
+    filter: none !important;
+    mix-blend-mode: normal !important;
 }
