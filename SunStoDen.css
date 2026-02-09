@@ -1350,3 +1350,69 @@ img {
     filter: none !important;
     mix-blend-mode: normal !important;
 }
+/* =====================================
+   LIODEN CHAT — ISOLATION FIX (NUCLEAR)
+   ===================================== */
+
+/* Completely isolate chat from page */
+#fra_chatContainer {
+    position: relative !important;
+    background: rgba(5, 24, 30, 0.65) !important;
+    background-image: none !important;
+    border-radius: 18px !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+}
+
+/* Kill ALL pseudo-elements reaching into chat */
+#fra_chatContainer::before,
+#fra_chatContainer::after,
+#fra_chatContainer *::before,
+#fra_chatContainer *::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* Block global body/html backgrounds from leaking */
+#fra_chatContainer,
+#fra_chatContainer * {
+    background-attachment: initial !important;
+    background-image: none !important;
+    background-repeat: no-repeat !important;
+}
+
+/* Message scroll area */
+#chatMessageContainer {
+    background: rgba(5, 24, 30, 0.55) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+}
+
+/* Input area */
+#txtChatContainer {
+    background: rgba(5, 24, 30, 0.55) !important;
+    border-radius: 14px !important;
+    padding: 10px !important;
+    margin-top: 10px !important;
+}
+
+/* Individual messages */
+.s-chat-message {
+    background: rgba(28, 48, 57, 0.7) !important;
+    border-radius: 14px !important;
+    padding: 10px 14px !important;
+    margin-bottom: 8px !important;
+}
+
+/* HARD BLOCK: no images, sprites, or fixed elements */
+#fra_chatContainer img {
+    display: inline-block !important;
+    position: static !important;
+    background: none !important;
+    filter: none !important;
+}
+
+/* Prevent fixed-position bleed entirely */
+#fra_chatContainer * {
+    position: relative !important;
+}
