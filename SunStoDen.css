@@ -1,7 +1,6 @@
 @media (min-width:768px) {
 body {
-background: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif
-') center center fixed !important;
+background: url(https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif) center center fixed !important;
 background-repeat: no-repeat;
 background-size: 100%;
 }
@@ -9,8 +8,7 @@ background-size: 100%;
 
 @media (max-width: 768px) {
 body {
-background: url('https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif
-') center center fixed !important;
+background: url(https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif) center center fixed !important;
 background-repeat: no-repeat;
 background-size: 100%;
 width: auto !important;
