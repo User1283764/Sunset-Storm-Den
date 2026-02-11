@@ -1,31 +1,6 @@
-@media (min-width:768px) {
 body {
-background: url(https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif) center center fixed !important;
-background-repeat: no-repeat;
-background-size: 100%;
-}
-}
-
-@media (max-width: 768px) {
-body {
-background: url(https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif) center center fixed !important;
-background-repeat: no-repeat;
-background-size: 100%;
-width: auto !important;
-min-width: 600px !important;
-}
-}
-
-.col-md-9.col-xs-12 {
-background: #143C54 !important;
-border: 4px double #91AFC2 !important;
-border-top: none !important;
-border-right: none !important;
-border-bottom :none !important;
-}
-
-div.container.main {
-background: #143C54 !important;
-border: 4px double #91AFC2 !important;
-border-left: none !important;
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
