@@ -4,8 +4,3 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
-div.col-md-9.col-xs-12,
-div.container.main {
-    background-color: #143C54 !important;
-    border: 4px double #91AFC2 !important;
-}
