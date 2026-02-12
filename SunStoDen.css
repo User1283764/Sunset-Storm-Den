@@ -23,6 +23,7 @@ body {
 }
 a {
     color: #EFA872;
+    transition: 0.3s;
 }
 
 a:hover {
