@@ -1,3 +1,10 @@
+body {
+    background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 .col-md-9 {
     background-color: #05181E;
     border: 5px solid #67767D;
