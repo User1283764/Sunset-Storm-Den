@@ -21,3 +21,10 @@ body {
     border-radius: 15px;
     box-shadow: 0 0 10px #000000;
 }
+a {
+    color: #EFA872;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
