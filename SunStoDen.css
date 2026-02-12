@@ -4,6 +4,7 @@
     padding: 20px;
     color: #FFFFFF;
     border-radius: 15px;
+    box-shadow: 0 0 10px #000000;
 }
 .col-md-3 {
     background-color: #1C3039;
@@ -11,4 +12,5 @@
     padding: 20px;
     color: #FFFFFF;
     border-radius: 15px;
+    box-shadow: 0 0 10px #000000;
 }
