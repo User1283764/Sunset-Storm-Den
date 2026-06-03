@@ -234,3 +234,10 @@ textarea{
     border: none !important;
     box-shadow: none !important;
 }
+/* ---------- REMOVE PAGE WHITE BOX ---------- */
+
+#pageContainer {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
