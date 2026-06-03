@@ -223,3 +223,14 @@ textarea{
     background:var(--accent);
     border-radius:10px;
 }
+/* ---------- REMOVE WHITE CONTENT BOX ---------- */
+
+.container,
+.content,
+.inner-content,
+.main-inner,
+.col-md-9 {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
