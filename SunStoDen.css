@@ -1,31 +1,196 @@
+/* =========================
+   SUNSET STORM DEN
+   Full rebuild
+   ========================= */
+
+/* ---------- BACKGROUND ---------- */
 body {
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
     background-attachment: fixed;
 }
-.col-md-9 {
-    background-color: #05181E;
-    border: 5px solid #67767D;
-    padding: 20px;
-    color: #FFFFFF;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #000000;
+
+/* ---------- CUSTOM CURSOR ---------- */
+body, a, button {
+    cursor: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png"), auto;
 }
-.col-md-3 {
-    background-color: #1C3039;
-    border: 5px solid #67767D;
-    padding: 20px;
-    color: #FFFFFF;
-    border-radius: 15px;
-    box-shadow: 0 0 10px #000000;
+
+/* ---------- MAIN DEN PANEL ---------- */
+#den .container {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 22px;
+    padding: 22px;
 }
+
+/* Prevent Bootstrap grey */
+#den .container *,
+#den .table {
+    background-color: transparent;
+}
+
+/* ---------- TOP MENU BAR ---------- */
+#header .navbar,
+#header .navbar-default {
+    background: rgba(0, 0, 0, 0.65) !important;
+    border-radius: 18px;
+    border: none;
+}
+
+/* ---------- REMOVE DEFAULT PANEL STYLES ---------- */
+.panel,
+.panel-default {
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* ---------- SIDEBAR BOXES ---------- */
+#pageSidebar .panel {
+    background-color: #1f3a40 !important; /* your darkest teal */
+    border-radius: 18px;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+/* Kill inner white */
+#pageSidebar .panel-body {
+    background-color: transparent !important;
+}
+
+/* ---------- SIDEBAR TEXT ---------- */
+#pageSidebar,
+#pageSidebar a,
+#pageSidebar span,
+#pageSidebar p {
+    color: #e8f3f3;
+}
+
+/* ---------- LINKS ---------- */
 a {
-    color: #EFA872;
-    transition: 0.3s;
+    color: #f2a65a; /* orange accent */
 }
 
 a:hover {
-    color: #FFFFFF;
+    color: #ffd19a;
+    text-decoration: none;
+}
+/* ===============================
+   LIODEN STRUCTURE FIXES
+   =============================== */
+
+/* ---- MAIN DEN CONTENT (LEFT) ---- */
+#pageContainer .panel-body,
+#pageContainer .table,
+#pageContainer .alert {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Remove inner white/grey borders */
+#pageContainer .panel {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* ---- SIDEBAR ONLY (RIGHT) ---- */
+#pageSidebar .panel-body.small {
+    background-color: #1f3a40 !important; /* darkest teal swatch */
+}
+
+#pageSidebar .panel {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* ---- NAVBAR ROUNDING ---- */
+.navbar,
+.navbar-default {
+    border-radius: 18px !important;
+    background: rgba(0, 0, 0, 0.65) !important;
+}
+/* ===============================
+   LIODEN HARD OVERRIDES
+   =============================== */
+
+/* MAIN CONTENT PANELS (LEFT SIDE) */
+.panel-body {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Sidebar panels ONLY */
+.sidebar .panel-body,
+#pageSidebar .panel-body,
+#pageSidebar .panel-body.small {
+    background-color: #1f3a40 !important;
+}
+
+/* Kill panel shells */
+.panel,
+.panel-default {
+    background: transparent !important;
+    border: none !important;
+}
+
+/* Tables & alerts inside den */
+.table,
+.table-responsive,
+.alert {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+/* Navbar */
+.navbar,
+.navbar-default {
+    background: rgba(0, 0, 0, 0.65) !important;
+    border-radius: 18px !important;
+}
+/* ===============================
+   LIODEN OVERLAY FIX
+   =============================== */
+
+/* Make all panel bodies transparent */
+.panel-body {
+    background: transparent !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* MAIN CONTENT OVERLAY */
+#pageContainer .panel-body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 18px;
+    z-index: -1;
+}
+
+/* SIDEBAR OVERLAY (dark teal) */
+#pageSidebar .panel-body::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #1f3a40; /* your darkest teal */
+    border-radius: 18px;
+    z-index: -1;
+}
+
+/* Remove panel shells */
+.panel,
+.panel-default {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+/* ===============================
+   LIODEN DEBUG â€“ FORCE VISUAL CHANGE
+   =============================== */
+
+/* Main content panels */
+#pageContainer .panel-body {
+    background: red !important;
+}
+
+/* Sidebar panels (date / stats boxes) */
+.sidebar .panel-body.small {
+    background: blue !important;
 }
