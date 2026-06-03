@@ -1,43 +1,69 @@
-/* =========================
-   SUNSET STORM DEN (CLEAN FIXED VERSION)
-   ========================= */
+/* =========================================
+   SUNSET STORM DEN — FULL REBUILD
+   Clean, structured, non-conflicting system
+   ========================================= */
 
-/* ---------- BACKGROUND ---------- */
+
+/* ========= THEME COLORS ========= */
+/* (Replace ONLY if needed — centralized system) */
+
+:root {
+
+    --main-bg: rgba(0, 0, 0, 0.6);   /* transparent black */
+    --sidebar-bg: #1f3a40;          /* dark teal */
+    --accent: #f2a65a;              /* sunset orange */
+    --accent-light: #ffd19a;
+    --text: #e8f3f3;
+
+    --radius: 18px;
+
+}
+
+
+/* ========= BACKGROUND ========= */
+
 body {
     background-image: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Sunset%20Storm%20Background.avif");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    color: var(--text);
 }
 
-/* ---------- CURSOR ---------- */
-body, a, button {
+
+/* ========= CUSTOM CURSOR ========= */
+
+body, a, button, input, select, textarea {
     cursor: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png"), auto;
 }
 
-/* =========================
-   MAIN CONTENT (LEFT SIDE)
-   ========================= */
+
+/* ========= GLOBAL ROUNDED BOXES ========= */
+
+.panel,
+.panel-body,
+.table,
+.alert,
+.table-responsive,
+.container.main {
+    border-radius: var(--radius) !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+
+/* ========= MAIN CONTENT (LEFT SIDE) ========= */
 
 #pageContainer .panel-body,
-#pageContainer .table,
-#pageContainer .alert {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border: none !important;
-    box-shadow: none !important;
+.table,
+.alert,
+.table-responsive {
+    background: var(--main-bg) !important;
+    color: var(--text) !important;
 }
 
-/* Remove default panel shells */
-.panel,
-.panel-default {
-    background: transparent !important;
-    border: none !important;
-    box-shadow: none !important;
-}
 
-/* =========================
-   SIDEBAR (RIGHT SIDE)
-   ========================= */
+/* ========= SIDEBAR (RIGHT SIDE) ========= */
 
 #pageSidebar .panel {
     background: transparent !important;
@@ -45,171 +71,135 @@ body, a, button {
 }
 
 #pageSidebar .panel-body {
-    background: #1f3a40 !important; /* dark teal */
-    border-radius: 18px;
-    overflow: hidden;
-    margin-bottom: 16px;
+    background: var(--sidebar-bg) !important;
+    color: var(--text) !important;
+    border-radius: var(--radius);
+    margin-bottom: 14px;
 }
 
-/* Sidebar text */
-#pageSidebar,
-#pageSidebar a,
-#pageSidebar span,
-#pageSidebar p {
-    color: #e8f3f3 !important;
-}
 
-/* =========================
-   NAVBAR
-   ========================= */
+/* ========= NAVBAR ========= */
 
 .navbar,
 .navbar-default {
-    background: rgba(0, 0, 0, 0.65) !important;
+    background: var(--main-bg) !important;
+    border-radius: var(--radius) !important;
     border: none !important;
-    border-radius: 18px !important;
 }
 
-/* =========================
-   LINKS
-   ========================= */
+
+/* ========= LINKS ========= */
 
 a {
-    color: #f2a65a !important; /* sunset orange */
+    color: var(--accent) !important;
 }
 
 a:hover {
-    color: #ffd19a !important;
-    text-decoration: none;
+    color: var(--accent-light) !important;
 }
 
-/* =========================
-   HEADERS
-   ========================= */
+
+/* ========= HEADERS ========= */
 
 h1, h2, h3 {
-    color: #f2a65a !important;
+    color: var(--accent) !important;
     text-align: center;
 }
 
-/* Sidebar headers */
-.sidebar h3 {
-    color: #e8f3f3 !important;
-}
 
-/* =========================
-   FORMS / INPUTS
-   ========================= */
+/* ========= FORMS ========= */
 
 input,
 select,
 textarea {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: var(--main-bg) !important;
+    color: var(--text) !important;
     border: none !important;
-    color: #e8f3f3 !important;
+    border-radius: var(--radius) !important;
 }
 
-/* =========================
-   TABLES / PANELS
-   ========================= */
 
-.table,
-.table-responsive {
-    background: rgba(0, 0, 0, 0.6) !important;
+/* ========= CUSTOM FIXED FLOWER (TOP CORNER) ========= */
+/* Stays in place while scrolling */
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 140px;
+    height: 140px;
+    background: url("YOUR_KENYAN_FLOWER_IMAGE_URL") no-repeat center center;
+    background-size: contain;
+    z-index: 9999;
+    pointer-events: none;
 }
 
-/* =========================
-   CHAT
-   ========================= */
 
-.s-chat-message:nth-child(even),
-.s-chat-message:nth-child(odd),
-.s-chat-message__pinned {
-    background: rgba(0, 0, 0, 0.6) !important;
-    color: #e8f3f3 !important;
-    border: none !important;
+/* ========= SCROLLING LION SPRITE (BOTTOM RIGHT) ========= */
+
+body::after {
+    content: "";
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 180px;
+    height: 180px;
+    background: url("YOUR_LION_SPRITE_URL") no-repeat center center;
+    background-size: contain;
+    z-index: 9999;
+    pointer-events: none;
 }
 
-/* =========================
-   ENERGY BAR
-   ========================= */
 
-.progress-bar {
-    background: rgba(0, 0, 0, 0.6) !important;
-}
-
-.progress div {
-    color: #e8f3f3 !important;
-}
-
-/* =========================
-   CAVES / MOUNDS
-   ========================= */
-
-.cave-grid,
-.mound-grid {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border: none !important;
-}
-
-/* =========================
-   CUSTOM BOXES
-   ========================= */
-
-.boxcontainer {
-    display: flex;
-    justify-content: center;
-    background: none;
-}
+/* ========= CUSTOM BOXES (IF USED IN DEN DESCRIPTION) ========= */
 
 .smallbox,
 .mediumbox,
 .largebox {
-    background: rgba(0, 0, 0, 0.6);
-    color: #e8f3f3;
+    background: var(--main-bg);
+    color: var(--text);
+    border-radius: var(--radius);
     padding: 10px;
     margin: 10px;
     overflow: auto;
-    border-radius: 12px;
 }
 
-.smallbox { width: 28.4%; height: 150px; }
-.mediumbox { width: 43.8%; height: 150px; }
+.smallbox { width: 28%; height: 150px; }
+.mediumbox { width: 44%; height: 150px; }
 .largebox { width: 90%; height: 150px; }
 
-/* =========================
-   AVATARS
-   ========================= */
 
-div#lion_image,
-table#player img {
-    border-radius: 50% !important;
-    overflow: hidden;
+/* ========= CHAT ========= */
+
+.s-chat-message:nth-child(odd),
+.s-chat-message:nth-child(even),
+.s-chat-message__pinned {
+    background: var(--main-bg) !important;
+    color: var(--text) !important;
+    border: none !important;
 }
 
-/* =========================
-   SCROLLBAR
-   ========================= */
+
+/* ========= SCROLLBAR ========= */
 
 ::-webkit-scrollbar {
     width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #0f1f22;
+    background: rgba(0,0,0,0.3);
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #f2a65a;
+    background: var(--accent);
     border-radius: 10px;
 }
 
-/* =========================
-   MOBILE FIX
-   ========================= */
 
-@media only screen and (max-width: 767px) {
-    .container.main .hidden-xs {
-        display: block !important;
-    }
+/* ========= SAFETY CLEANUP ========= */
+
+.panel {
+    background: transparent !important;
+    border: none !important;
 }
