@@ -1,6 +1,5 @@
 /* =========================
-   SUNSET STORM DEN
-   Full rebuild
+   SUNSET STORM DEN (CLEAN FIXED VERSION)
    ========================= */
 
 /* ---------- BACKGROUND ---------- */
@@ -11,186 +10,206 @@ body {
     background-attachment: fixed;
 }
 
-/* ---------- CUSTOM CURSOR ---------- */
+/* ---------- CURSOR ---------- */
 body, a, button {
     cursor: url("https://raw.githubusercontent.com/User1283764/Sunset-Storm-Den/main/Lioden%20Custom%20Cursor%202.png"), auto;
 }
 
-/* ---------- MAIN DEN PANEL ---------- */
-#den .container {
+/* =========================
+   MAIN CONTENT (LEFT SIDE)
+   ========================= */
+
+#pageContainer .panel-body,
+#pageContainer .table,
+#pageContainer .alert {
     background: rgba(0, 0, 0, 0.6) !important;
-    border-radius: 22px;
-    padding: 22px;
-}
-
-/* Prevent Bootstrap grey */
-#den .container *,
-#den .table {
-    background-color: transparent;
-}
-
-/* ---------- TOP MENU BAR ---------- */
-#header .navbar,
-#header .navbar-default {
-    background: rgba(0, 0, 0, 0.65) !important;
-    border-radius: 18px;
-    border: none;
-}
-
-/* ---------- REMOVE DEFAULT PANEL STYLES ---------- */
-.panel,
-.panel-default {
     border: none !important;
     box-shadow: none !important;
 }
 
-/* ---------- SIDEBAR BOXES ---------- */
+/* Remove default panel shells */
+.panel,
+.panel-default {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* =========================
+   SIDEBAR (RIGHT SIDE)
+   ========================= */
+
 #pageSidebar .panel {
-    background-color: #1f3a40 !important; /* your darkest teal */
-    border-radius: 18px;
-    margin-bottom: 16px;
-    overflow: hidden;
+    background: transparent !important;
+    border: none !important;
 }
 
-/* Kill inner white */
 #pageSidebar .panel-body {
-    background-color: transparent !important;
+    background: #1f3a40 !important; /* dark teal */
+    border-radius: 18px;
+    overflow: hidden;
+    margin-bottom: 16px;
 }
 
-/* ---------- SIDEBAR TEXT ---------- */
+/* Sidebar text */
 #pageSidebar,
 #pageSidebar a,
 #pageSidebar span,
 #pageSidebar p {
-    color: #e8f3f3;
+    color: #e8f3f3 !important;
 }
 
-/* ---------- LINKS ---------- */
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar,
+.navbar-default {
+    background: rgba(0, 0, 0, 0.65) !important;
+    border: none !important;
+    border-radius: 18px !important;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+
 a {
-    color: #f2a65a; /* orange accent */
+    color: #f2a65a !important; /* sunset orange */
 }
 
 a:hover {
-    color: #ffd19a;
+    color: #ffd19a !important;
     text-decoration: none;
 }
-/* ===============================
-   LIODEN STRUCTURE FIXES
-   =============================== */
 
-/* ---- MAIN DEN CONTENT (LEFT) ---- */
-#pageContainer .panel-body,
-#pageContainer .table,
-#pageContainer .alert {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+/* =========================
+   HEADERS
+   ========================= */
+
+h1, h2, h3 {
+    color: #f2a65a !important;
+    text-align: center;
 }
 
-/* Remove inner white/grey borders */
-#pageContainer .panel {
-    background: transparent !important;
+/* Sidebar headers */
+.sidebar h3 {
+    color: #e8f3f3 !important;
+}
+
+/* =========================
+   FORMS / INPUTS
+   ========================= */
+
+input,
+select,
+textarea {
+    background: rgba(0, 0, 0, 0.6) !important;
     border: none !important;
+    color: #e8f3f3 !important;
 }
 
-/* ---- SIDEBAR ONLY (RIGHT) ---- */
-#pageSidebar .panel-body.small {
-    background-color: #1f3a40 !important; /* darkest teal swatch */
-}
+/* =========================
+   TABLES / PANELS
+   ========================= */
 
-#pageSidebar .panel {
-    background: transparent !important;
-    border: none !important;
-}
-
-/* ---- NAVBAR ROUNDING ---- */
-.navbar,
-.navbar-default {
-    border-radius: 18px !important;
-    background: rgba(0, 0, 0, 0.65) !important;
-}
-/* ===============================
-   LIODEN HARD OVERRIDES
-   =============================== */
-
-/* MAIN CONTENT PANELS (LEFT SIDE) */
-.panel-body {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-}
-
-/* Sidebar panels ONLY */
-.sidebar .panel-body,
-#pageSidebar .panel-body,
-#pageSidebar .panel-body.small {
-    background-color: #1f3a40 !important;
-}
-
-/* Kill panel shells */
-.panel,
-.panel-default {
-    background: transparent !important;
-    border: none !important;
-}
-
-/* Tables & alerts inside den */
 .table,
-.table-responsive,
-.alert {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+.table-responsive {
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 
-/* Navbar */
-.navbar,
-.navbar-default {
-    background: rgba(0, 0, 0, 0.65) !important;
-    border-radius: 18px !important;
-}
-/* ===============================
-   LIODEN OVERLAY FIX
-   =============================== */
+/* =========================
+   CHAT
+   ========================= */
 
-/* Make all panel bodies transparent */
-.panel-body {
-    background: transparent !important;
-    position: relative;
-    z-index: 1;
-}
-
-/* MAIN CONTENT OVERLAY */
-#pageContainer .panel-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 18px;
-    z-index: -1;
-}
-
-/* SIDEBAR OVERLAY (dark teal) */
-#pageSidebar .panel-body::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: #1f3a40; /* your darkest teal */
-    border-radius: 18px;
-    z-index: -1;
-}
-
-/* Remove panel shells */
-.panel,
-.panel-default {
-    background: transparent !important;
+.s-chat-message:nth-child(even),
+.s-chat-message:nth-child(odd),
+.s-chat-message__pinned {
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: #e8f3f3 !important;
     border: none !important;
-    box-shadow: none !important;
-}
-/* ===============================
-   LIODEN DEBUG â€“ FORCE VISUAL CHANGE
-   =============================== */
-
-/* Main content panels */
-#pageContainer .panel-body {
-    background: red !important;
 }
 
-/* Sidebar panels (date / stats boxes) */
-.sidebar .panel-body.small {
-    background: blue !important;
+/* =========================
+   ENERGY BAR
+   ========================= */
+
+.progress-bar {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.progress div {
+    color: #e8f3f3 !important;
+}
+
+/* =========================
+   CAVES / MOUNDS
+   ========================= */
+
+.cave-grid,
+.mound-grid {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: none !important;
+}
+
+/* =========================
+   CUSTOM BOXES
+   ========================= */
+
+.boxcontainer {
+    display: flex;
+    justify-content: center;
+    background: none;
+}
+
+.smallbox,
+.mediumbox,
+.largebox {
+    background: rgba(0, 0, 0, 0.6);
+    color: #e8f3f3;
+    padding: 10px;
+    margin: 10px;
+    overflow: auto;
+    border-radius: 12px;
+}
+
+.smallbox { width: 28.4%; height: 150px; }
+.mediumbox { width: 43.8%; height: 150px; }
+.largebox { width: 90%; height: 150px; }
+
+/* =========================
+   AVATARS
+   ========================= */
+
+div#lion_image,
+table#player img {
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+
+/* =========================
+   SCROLLBAR
+   ========================= */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f1f22;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f2a65a;
+    border-radius: 10px;
+}
+
+/* =========================
+   MOBILE FIX
+   ========================= */
+
+@media only screen and (max-width: 767px) {
+    .container.main .hidden-xs {
+        display: block !important;
+    }
 }
