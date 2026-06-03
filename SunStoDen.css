@@ -1,3 +1,225 @@
-body {
-    background: yellow !important;
+/* ===================================
+   SUNSET STORM DEN
+   =================================== */
+
+/* ---------- COLORS ---------- */
+
+:root{
+    --main-bg: rgba(0,0,0,0.60);
+    --teal: #1f3a40;
+    --accent: #f2a65a;
+    --accent-light: #ffd19a;
+    --text: #e8f3f3;
+    --radius: 18px;
+}
+
+/* ---------- BACKGROUND ---------- */
+
+body{
+    background:url("https://user1283764.github.io/Sunset-Storm-Den/Sunset%20Storm%20Background.avif") center center fixed;
+    background-size:cover;
+    color:var(--text);
+}
+
+/* ---------- CURSOR ---------- */
+
+body,
+a,
+button,
+input,
+select,
+textarea{
+    cursor:url("https://user1283764.github.io/Sunset-Storm-Den/Lioden%20Custom%20Cursor%202.png"), auto;
+}
+
+/* ---------- KENYAN FLOWER ---------- */
+
+body::before{
+    content:"";
+    position:fixed;
+    top:15px;
+    left:20px;
+    width:120px;
+    height:120px;
+    background:url("https://user1283764.github.io/Sunset-Storm-Den/Kenyan%20Flower%20(Lioden).png") center center no-repeat;
+    background-size:contain;
+    pointer-events:none;
+    z-index:9999;
+}
+
+/* ---------- LION SPRITE ---------- */
+
+body::after{
+    content:"";
+    position:fixed;
+    bottom:10px;
+    right:10px;
+    width:220px;
+    height:220px;
+    background:url("https://user1283764.github.io/Sunset-Storm-Den/Lion%20Sprite%20(Lioden)%20copy.png") center center no-repeat;
+    background-size:contain;
+    pointer-events:none;
+    z-index:9999;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container.main{
+    background:var(--main-bg) !important;
+    border-radius:var(--radius);
+    border:none !important;
+}
+
+/* ---------- TABLES ---------- */
+
+.table{
+    background:var(--main-bg) !important;
+    border-radius:var(--radius);
+    overflow:hidden;
+}
+
+/* ---------- PANELS ---------- */
+
+.panel{
+    border:none !important;
+    border-radius:var(--radius) !important;
+    overflow:hidden;
+}
+
+/* ---------- PANEL HEADERS ---------- */
+
+.panel-heading,
+.top,
+.bottom,
+th{
+    background:var(--teal) !important;
+    color:var(--text) !important;
+}
+
+/* ---------- PANEL BODIES ---------- */
+
+.panel-body{
+    background:var(--main-bg) !important;
+    color:var(--text) !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+.sidebar .panel-body,
+.col-md-3 .panel-body{
+    background:var(--teal) !important;
+}
+
+/* ---------- NAVBAR ---------- */
+
+.navbar,
+.navbar-default{
+    background:var(--main-bg) !important;
+    border:none !important;
+    border-radius:var(--radius) !important;
+}
+
+/* ---------- TOPBAR ---------- */
+
+.topbar{
+    background:var(--main-bg) !important;
+    border:none !important;
+}
+
+/* ---------- BREADCRUMB ---------- */
+
+.breadcrumb{
+    background:var(--main-bg) !important;
+    border:none !important;
+    border-radius:var(--radius);
+}
+
+/* ---------- LINKS ---------- */
+
+a{
+    color:var(--accent) !important;
+}
+
+a:hover{
+    color:var(--accent-light) !important;
+}
+
+/* ---------- HEADERS ---------- */
+
+h1,
+h2,
+h3{
+    color:var(--accent) !important;
+}
+
+/* ---------- FORMS ---------- */
+
+input,
+select,
+textarea{
+    background:var(--main-bg) !important;
+    color:var(--text) !important;
+    border:none !important;
+    border-radius:var(--radius) !important;
+}
+
+/* ---------- CHAT ---------- */
+
+.s-chat-message:nth-child(odd),
+.s-chat-message:nth-child(even),
+.s-chat-message__pinned{
+    background:var(--main-bg) !important;
+    color:var(--text) !important;
+    border:none !important;
+}
+
+/* ---------- CAVES ---------- */
+
+.cave-grid,
+.mound-grid{
+    background:var(--main-bg) !important;
+    border:none !important;
+    border-radius:var(--radius) !important;
+}
+
+/* ---------- ENERGY ---------- */
+
+.progress{
+    background:var(--main-bg) !important;
+}
+
+.progress-bar{
+    background:var(--accent) !important;
+}
+
+/* ---------- ROUNDED CORNERS ---------- */
+
+.alert,
+.item,
+.feature,
+.boxcontainer div,
+.table,
+.panel,
+.panel-body,
+.navbar,
+.topbar,
+.breadcrumb,
+.cave-grid,
+.mound-grid{
+    border-radius:var(--radius) !important;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f1f22;
+}
+
+::-webkit-scrollbar-thumb{
+    background:var(--accent);
+    border-radius:10px;
 }
