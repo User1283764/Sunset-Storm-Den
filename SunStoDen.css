@@ -241,3 +241,11 @@ textarea{
     border: none !important;
     box-shadow: none !important;
 }
+/* ---------- REMOVE PANEL BORDERS ---------- */
+
+.panel,
+.panel-body,
+.panel-body.small {
+    border: none !important;
+    box-shadow: none !important;
+}
